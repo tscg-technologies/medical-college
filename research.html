@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research & Innovation | Medical College Website Demo</title>
+  <meta name="description" content="Explore medical research fundamentals, evidence-based medicine, public health inquiry, and scientific publication education.">
+  <meta name="robots" content="index, follow">
+  
+  <meta property="og:title" content="Research & Innovation | Medical College Website Demo">
+  <meta property="og:description" content="Encouraging scientific inquiry, clinical investigations, and ethical healthcare research.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/medical-research.webp">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="demo-top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-badge">Demonstration Website</span>
+        <span>Generic Indian Medical Education Curriculum & Institution Concept Demo</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:0000000000" class="top-bar-link">Demo Helpline: 0000000000</a>
+        <a href="mailto:demo@example.com" class="top-bar-link">demo@example.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Medical College Website Home">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            <path d="M12 17v4M10 19h4" stroke-width="2.2"/>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">MEDICAL COLLEGE</span>
+          <span class="brand-subtitle">Excellence in Medical Education</span>
+        </div>
+      </a>
+
+            <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+
+          <!-- Academics Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="academics.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Academics
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="academics.html" class="dropdown-link">Academic Programs</a></li>
+              <li><a href="departments.html" class="dropdown-link">Medical Departments</a></li>
+              <li><a href="research.html" class="dropdown-link">Research & Innovation</a></li>
+            </ul>
+          </li>
+
+          <!-- Campus Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="about.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Our Campus
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html" class="dropdown-link">About Our College</a></li>
+              <li><a href="faculty.html" class="dropdown-link">Faculty Mentors</a></li>
+              <li><a href="campus-life.html" class="dropdown-link">Campus Life & Facilities</a></li>
+            </ul>
+          </li>
+
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html#enquirySection" class="portal-demo-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a8.38 8.38 0 0 1 13 0"/></svg>
+          Student Portal
+        </a>
+        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text-wrap">
+        <span class="brand-title">MEDICAL COLLEGE</span>
+        <span class="brand-subtitle">Navigation</span>
+      </div>
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="academics.html" class="nav-link">Academics</a></li>
+      <li><a href="departments.html" class="nav-link">Departments</a></li>
+      <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+      <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+      <li><a href="research.html" class="nav-link active">Research</a></li>
+      <li><a href="campus-life.html" class="nav-link">Campus Life</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-cta">
+      <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+      <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner reveal-on-scroll">
+          <div class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Research & Innovation</span>
+          </div>
+          <span class="section-badge">SCIENTIFIC INQUIRY</span>
+          <h1 class="page-hero-title">Encouraging Scientific Thinking and Medical Research</h1>
+          <p class="page-hero-desc">Discover how medical education nurtures curiosity, statistical rigor, clinical epidemiology, and ethical research methodologies among future medical doctors.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-column reveal-on-scroll">
+            <div class="about-image-wrapper">
+              <img src="assets/images/medical-research.webp" alt="Advanced Medical Research Environment">
+            </div>
+            <div class="about-badge-card">
+              <h5 class="badge-title">Evidence-Based Medicine</h5>
+              <p class="badge-desc">Fostering critical appraisal of medical literature and empirical data.</p>
+            </div>
+          </div>
+
+          <div class="about-content-column reveal-on-scroll">
+            <span class="section-badge">INQUIRY-DRIVEN PEDAGOGY</span>
+            <h2 class="section-title">Bridging Laboratory Science and Clinical Application</h2>
+            <p style="margin-bottom: 1.25rem;">Medical science advances through rigorous empirical study, hypothesis testing, and continuous analysis of disease patterns. Early exposure to research methodology equips medical undergraduates and postgraduates with the critical thinking needed to assess new clinical trials and treatment modalities.</p>
+            <p style="margin-bottom: 2rem;">Our educational philosophy emphasizes research literacy: understanding study designs, epidemiological distributions, biostatistical analysis, and the foundational ethical mandates of human subject protection.</p>
+
+            <div class="about-values-grid" style="margin: 0;">
+              <div class="value-card">
+                <h4 class="value-card-title">Bioethics & Compliance</h4>
+                <p class="value-card-desc">Adhering to Indian Council of Medical Research (ICMR) ethical guidelines.</p>
+              </div>
+              <div class="value-card">
+                <h4 class="value-card-title">Student Mentorship</h4>
+                <p class="value-card-desc">Guiding students through research protocol writing and study design.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Six Core Research Themes (Section 16) -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">EDUCATIONAL THEMES</span>
+          <h2 class="section-title">Core Research Focus Areas</h2>
+          <p class="section-desc">Six key dimensions of medical scientific inquiry designed to inspire analytical exploration.</p>
+          <div class="demo-disclaimer-pill">Educational Themes – Conceptual Overview</div>
+        </div>
+
+        <div class="research-grid">
+          <!-- Theme 1 -->
+          <div class="research-card reveal-on-scroll">
+            <div class="research-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3 class="research-title">Medical Research Fundamentals</h3>
+            <p class="research-desc">Instruction in hypothesis formulation, systematic literature review methods, research question framing, and statistical significance testing.</p>
+          </div>
+
+          <!-- Theme 2 -->
+          <div class="research-card reveal-on-scroll">
+            <div class="research-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="research-title">Evidence-Based Learning</h3>
+            <p class="research-desc">Training future clinicians to evaluate meta-analyses, systematic reviews, and randomized controlled trials when deciding therapeutic interventions.</p>
+          </div>
+
+          <!-- Theme 3 -->
+          <div class="research-card reveal-on-scroll">
+            <div class="research-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3 class="research-title">Public Health Research</h3>
+            <p class="research-desc">Community-based field studies investigating regional disease burdens, nutritional indices, maternal health trends, and rural sanitation impacts.</p>
+          </div>
+
+          <!-- Theme 4 -->
+          <div class="research-card reveal-on-scroll">
+            <div class="research-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3 class="research-title">Clinical Research Education</h3>
+            <p class="research-desc">Understanding observational study designs, retrospective cohort analyses, cross-sectional surveys, and Good Clinical Practice (GCP) compliance.</p>
+          </div>
+
+          <!-- Theme 5 -->
+          <div class="research-card reveal-on-scroll">
+            <div class="research-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="research-title">Scientific Publications & Learning</h3>
+            <p class="research-desc">Fostering clear academic writing, peer-review comprehension, citation standards, and presenting scientific abstracts at medical conferences.</p>
+          </div>
+
+          <!-- Theme 6 -->
+          <div class="research-card reveal-on-scroll">
+            <div class="research-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3 class="research-title">Innovation in Healthcare</h3>
+            <p class="research-desc">Exploring point-of-care diagnostics, digital telemetry in rural settings, automated medical informatics, and simulation-based learning advances.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Student Research Programs Overview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">STUDENT INITIATIVES</span>
+          <h2 class="section-title">Student Scientific Project Pathways</h2>
+          <p class="section-desc">Conceptual frameworks designed to introduce undergraduate and postgraduate learners to formal scientific inquiry.</p>
+        </div>
+
+        <div class="admission-timeline reveal-on-scroll">
+          <div class="timeline-step">
+            <div class="step-indicator">01</div>
+            <div class="step-content">
+              <h3 class="step-title">Short-Term Research Projects</h3>
+              <p class="step-desc">Undergraduate students are encouraged to undertake mentored summer research protocols (conceptually aligned with national student fellowship formats), learning hypothesis formulation, data collection, and statistical synthesis.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-indicator">02</div>
+            <div class="step-content">
+              <h3 class="step-title">Institutional Ethics Review</h3>
+              <p class="step-desc">All proposed student research passes through the Institutional Ethics Committee (IEC). Learners present participant information sheets, informed consent forms, and protocol safety measures.</p>
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <div class="step-indicator">03</div>
+            <div class="step-content">
+              <h3 class="step-title">Symposia Presentations & Journal Discussions</h3>
+              <p class="step-desc">Students participate in monthly institutional journal clubs and present poster abstracts at academic colloquiums, building poise and scientific discourse capabilities.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-disclaimer-box reveal-on-scroll" style="margin-top: 3.5rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div>
+            <div class="timeline-disclaimer-title">Research Information Disclaimer</div>
+            <p class="timeline-disclaimer-text">This section presents generalized educational concepts regarding medical research. This demonstration website does not claim, invent, or represent any specific scientific publications, patents, institutional research partnerships, grants, or official accolades.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <div class="footer-brand-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              <path d="M12 17v4M10 19h4" stroke-width="2"/>
+            </svg>
+            MEDICAL COLLEGE WEBSITE
+          </div>
+          <p class="footer-about-text">A modern, demonstration website showcasing educational structures, MBBS curriculums, medical departments, and facilities for Indian medical education institutions.</p>
+          <div class="footer-social-links">
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academic Programs</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Institution</h4>
+          <ul class="footer-nav-list">
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="campus-life.html">Campus Life</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Phone: 0000000000</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email: demo@example.com</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Address: Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-legal-disclaimer">
+          <strong>Disclaimer:</strong> This is a fictional educational website demonstration. All institutional details, academic programs, faculty profiles, statistics, student testimonials, medical facilities, research information, and events are illustrative and do not represent an actual medical institution.
+        </div>
+        <div class="footer-copy-row">
+          <div>&copy; 2026 Medical College Website. Demo Website – All Rights Reserved.</div>
+          <div>Compatible with Hostinger Static Website Hosting | Vanilla HTML5, CSS3 & JavaScript</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

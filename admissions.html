@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions & Eligibility | Medical College Website Demo</title>
+  <meta name="description" content="General admission process, MBBS eligibility information for Indian aspirants, NEET entrance guidance, and online enquiry demo form.">
+  <meta name="robots" content="index, follow">
+  
+  <meta property="og:title" content="Admissions & Eligibility | Medical College Website Demo">
+  <meta property="og:description" content="Discover the 5-step Indian medical admission timeline, eligibility criteria, and verification procedures.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/medical-classroom.webp">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="demo-top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-badge">Demonstration Website</span>
+        <span>Generic Indian Medical Education Curriculum & Institution Concept Demo</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:0000000000" class="top-bar-link">Demo Helpline: 0000000000</a>
+        <a href="mailto:demo@example.com" class="top-bar-link">demo@example.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Medical College Website Home">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            <path d="M12 17v4M10 19h4" stroke-width="2.2"/>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">MEDICAL COLLEGE</span>
+          <span class="brand-subtitle">Excellence in Medical Education</span>
+        </div>
+      </a>
+
+            <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+
+          <!-- Academics Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="academics.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Academics
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="academics.html" class="dropdown-link">Academic Programs</a></li>
+              <li><a href="departments.html" class="dropdown-link">Medical Departments</a></li>
+              <li><a href="research.html" class="dropdown-link">Research & Innovation</a></li>
+            </ul>
+          </li>
+
+          <!-- Campus Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="about.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Our Campus
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html" class="dropdown-link">About Our College</a></li>
+              <li><a href="faculty.html" class="dropdown-link">Faculty Mentors</a></li>
+              <li><a href="campus-life.html" class="dropdown-link">Campus Life & Facilities</a></li>
+            </ul>
+          </li>
+
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#enquirySection" class="portal-demo-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a8.38 8.38 0 0 1 13 0"/></svg>
+          Student Portal
+        </a>
+        <a href="#enquirySection" class="btn btn-primary btn-sm">Apply Now</a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text-wrap">
+        <span class="brand-title">MEDICAL COLLEGE</span>
+        <span class="brand-subtitle">Navigation</span>
+      </div>
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="academics.html" class="nav-link">Academics</a></li>
+      <li><a href="departments.html" class="nav-link">Departments</a></li>
+      <li><a href="admissions.html" class="nav-link active">Admissions</a></li>
+      <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+      <li><a href="research.html" class="nav-link">Research</a></li>
+      <li><a href="campus-life.html" class="nav-link">Campus Life</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-cta">
+      <a href="#enquirySection" class="btn btn-primary">Apply Now</a>
+      <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner reveal-on-scroll">
+          <div class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Admissions</span>
+          </div>
+          <span class="section-badge">ADMISSION GUIDELINES</span>
+          <h1 class="page-hero-title">Your Journey Towards Medical Education Starts Here</h1>
+          <p class="page-hero-desc">Explore the standard 5-step admission roadmap, statutory eligibility criteria, entrance examination prerequisites, and counselling procedures for medical aspirants in India.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5-Step Admission Timeline -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">5-STEP TIMELINE</span>
+          <h2 class="section-title">Standard Medical Admission Process</h2>
+          <p class="section-desc">Procedural progression from entrance qualification to institutional enrollment under Indian regulatory frameworks.</p>
+        </div>
+
+        <div class="admission-timeline reveal-on-scroll">
+          <!-- Step 01 -->
+          <div class="timeline-step">
+            <div class="step-indicator">01</div>
+            <div class="step-content">
+              <h3 class="step-title">Step 01: Review Eligibility</h3>
+              <p class="step-desc">Aspirants evaluate essential academic qualifications: successful completion of 10+2 higher secondary examination with Physics, Chemistry, Biology/Biotechnology, and English from a recognized educational board, adhering to age limits and aggregate benchmarks.</p>
+              <div class="step-highlights">
+                <span class="step-highlight-chip">10+2 Higher Secondary</span>
+                <span class="step-highlight-chip">Science Stream (PCB)</span>
+                <span class="step-highlight-chip">Prescribed Age Compliance</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="timeline-step">
+            <div class="step-indicator">02</div>
+            <div class="step-content">
+              <h3 class="step-title">Step 02: Entrance Examination</h3>
+              <p class="step-desc">Candidates appear for the mandatory national competitive entrance exam (NEET-UG for undergraduate MBBS; NEET-PG for postgraduate MD/MS) administered by authorized national examination bodies.</p>
+              <div class="step-highlights">
+                <span class="step-highlight-chip">National NEET Examination</span>
+                <span class="step-highlight-chip">Merit Cut-off Percentile</span>
+                <span class="step-highlight-chip">Official Scorecard</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="timeline-step">
+            <div class="step-indicator">03</div>
+            <div class="step-content">
+              <h3 class="step-title">Step 03: Counselling and Seat Allocation</h3>
+              <p class="step-desc">Eligible candidates register on authorized central or state counselling portals. Seat allocation proceeds through multi-round merit-based choice locking governed by statutory counselling committees.</p>
+              <div class="step-highlights">
+                <span class="step-highlight-chip">Central/State Counselling</span>
+                <span class="step-highlight-chip">Merit Choice Locking</span>
+                <span class="step-highlight-chip">Seat Allocation Order</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="timeline-step">
+            <div class="step-indicator">04</div>
+            <div class="step-content">
+              <h3 class="step-title">Step 04: Document Verification</h3>
+              <p class="step-desc">Allotted candidates report with original academic certificates, entrance admit card, rank card, transfer certificates, category documentation (if applicable), and medical fitness certificate.</p>
+              <div class="step-highlights">
+                <span class="step-highlight-chip">Original Transcripts</span>
+                <span class="step-highlight-chip">NEET Rank Letter</span>
+                <span class="step-highlight-chip">Physical Fitness Clearance</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 05 -->
+          <div class="timeline-step">
+            <div class="step-indicator">05</div>
+            <div class="step-content">
+              <h3 class="step-title">Step 05: Admission Confirmation</h3>
+              <p class="step-desc">Remittance of statutory regulatory tuition fees, receipt of formal institutional enrollment number, participation in the institutional white coat ceremony, and commencement of academic orientation.</p>
+              <div class="step-highlights">
+                <span class="step-highlight-chip">Institutional Enrollment</span>
+                <span class="step-highlight-chip">White Coat Orientation</span>
+                <span class="step-highlight-chip">Academic Timetable</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline Regulatory Disclaimer -->
+        <div class="timeline-disclaimer-box reveal-on-scroll">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <div>
+            <div class="timeline-disclaimer-title">Statutory Regulatory Notice</div>
+            <p class="timeline-disclaimer-text">Medical admission procedures, eligibility, entrance examination requirements, counselling, seat allocation, and applicable regulations depend strictly on current official rules and relevant authorities. This website does not guarantee admission, offer direct seats, or invent institutional criteria.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Eligibility Information for Indian Medical Aspirants -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">ELIGIBILITY CRITERIA</span>
+          <h2 class="section-title">Eligibility Information for Indian Medical Aspirants</h2>
+          <p class="section-desc">Key educational prerequisites for undergraduate and postgraduate medical applicants in accordance with national norms.</p>
+        </div>
+
+        <div class="eligibility-table-card reveal-on-scroll">
+          <div class="table-card-header">
+            <h3 class="table-card-title">Undergraduate (MBBS) Eligibility Overview</h3>
+            <p class="table-card-subtitle">General statutory norms applicable to candidates seeking admission into MBBS programs</p>
+          </div>
+          <table class="eligibility-table">
+            <thead>
+              <tr>
+                <th>Requirement</th>
+                <th>Prescribed Statutory Guidelines</th>
+                <th>Verification Advisory</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Qualifying Examination</strong></td>
+                <td>Higher Secondary (10+2) or equivalent from a recognized Central/State educational board.</td>
+                <td>Original pass certificates and marksheets required during physical verification.</td>
+              </tr>
+              <tr>
+                <td><strong>Mandatory Subjects</strong></td>
+                <td>Physics, Chemistry, Biology/Biotechnology, and English as core compulsory subjects.</td>
+                <td>Candidate must have passed each subject individually.</td>
+              </tr>
+              <tr>
+                <td><strong>Minimum Qualifying Marks</strong></td>
+                <td>Minimum qualifying aggregate marks in PCB as prescribed by current statutory authorities (e.g. general category benchmarks).</td>
+                <td>Criteria varies for reserved categories as per current official regulatory guidelines.</td>
+              </tr>
+              <tr>
+                <td><strong>Entrance Examination</strong></td>
+                <td>Qualifying score in the National Eligibility cum Entrance Test (NEET-UG).</td>
+                <td>Scorecard and all-India overall merit rank letter issued by the conducting agency.</td>
+              </tr>
+              <tr>
+                <td><strong>Age Criteria</strong></td>
+                <td>Must have attained the minimum prescribed age (generally 17 years on or before December 31 of the admission year).</td>
+                <td>Birth certificate or secondary school certificate (10th) serving as age proof.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="eligibility-table-card reveal-on-scroll">
+          <div class="table-card-header" style="background-color: var(--color-navy-light);">
+            <h3 class="table-card-title">Postgraduate (MD / MS) Eligibility Overview</h3>
+            <p class="table-card-subtitle">General criteria applicable to medical graduates seeking postgraduate residency specializations</p>
+          </div>
+          <table class="eligibility-table">
+            <thead>
+              <tr>
+                <th>Requirement</th>
+                <th>Prescribed Statutory Guidelines</th>
+                <th>Verification Advisory</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Basic Medical Degree</strong></td>
+                <td>Recognized MBBS degree from an institution approved under prevailing medical education statutes.</td>
+                <td>Degree certificate / provisional pass certificate.</td>
+              </tr>
+              <tr>
+                <td><strong>Internship Completion</strong></td>
+                <td>Satisfactory completion of 1-year Compulsory Rotating Medical Internship (CRMI) on or before official cut-off date.</td>
+                <td>Internship completion certificate issued by the teaching institution.</td>
+              </tr>
+              <tr>
+                <td><strong>Statutory Registration</strong></td>
+                <td>Permanent or provisional registration certificate issued by the National Medical Commission or State Medical Council.</td>
+                <td>Valid medical council registration number mandatory.</td>
+              </tr>
+              <tr>
+                <td><strong>Postgraduate Entrance</strong></td>
+                <td>Qualifying in the National Eligibility cum Entrance Test for Postgraduates (NEET-PG).</td>
+                <td>NEET-PG scorecard and merit seat allocation letter.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="timeline-disclaimer-box reveal-on-scroll">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div>
+            <div class="timeline-disclaimer-title">Regulatory Verification Disclaimer</div>
+            <p class="timeline-disclaimer-text">Exact eligibility criteria, category relaxations, syllabus details, and counselling dates must be verified against current official regulations issued by statutory national bodies and designated examination authorities. Do not rely on third-party portals for definitive legal requirements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 22: Admission Enquiry Form -->
+    <section class="section" id="enquirySection">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">ONLINE ENQUIRY</span>
+          <h2 class="section-title">Begin Your Journey in Medical Education</h2>
+          <p class="section-desc">Interested in pursuing medical education? Share your details to explore general admission information.</p>
+        </div>
+
+        <div class="enquiry-form-card reveal-on-scroll">
+          <div class="form-disclaimer-notice">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <span><strong>Demo form only:</strong> Your information is processed purely in the browser for validation testing and is not transmitted, stored, or saved.</span>
+          </div>
+
+          <form id="admissionEnquiryForm" novalidate>
+            <div class="form-grid">
+              <!-- Full Name -->
+              <div>
+                <label for="fullName" class="form-label">Full Name <span class="required-star">*</span></label>
+                <input type="text" id="fullName" class="form-input" placeholder="e.g. Sneha Reddy" required>
+                <div class="field-error-msg" id="nameError">Please enter your full name.</div>
+              </div>
+
+              <!-- Mobile Number -->
+              <div>
+                <label for="mobileNumber" class="form-label">Mobile Number <span class="required-star">*</span></label>
+                <input type="tel" id="mobileNumber" class="form-input" placeholder="e.g. 9876543210" maxlength="10" required>
+                <div class="form-helper-text">10-digit Indian mobile number (starts with 6-9)</div>
+                <div class="field-error-msg" id="mobileError">Please enter a valid 10-digit Indian mobile number.</div>
+              </div>
+
+              <!-- Email Address -->
+              <div>
+                <label for="emailAddress" class="form-label">Email Address <span class="required-star">*</span></label>
+                <input type="email" id="emailAddress" class="form-input" placeholder="e.g. aspirant@example.com" required>
+                <div class="field-error-msg" id="emailError">Please enter a valid email address.</div>
+              </div>
+
+              <!-- City -->
+              <div>
+                <label for="city" class="form-label">City <span class="required-star">*</span></label>
+                <input type="text" id="city" class="form-input" placeholder="e.g. Hyderabad" required>
+                <div class="field-error-msg" id="cityError">Please enter your current city.</div>
+              </div>
+
+              <!-- Academic Qualification -->
+              <div>
+                <label for="academicQualification" class="form-label">Academic Qualification <span class="required-star">*</span></label>
+                <select id="academicQualification" class="form-select" required>
+                  <option value="">Select Academic Qualification</option>
+                  <option value="12th Appearing">10+2 / Higher Secondary (Appearing)</option>
+                  <option value="12th Completed">10+2 / Higher Secondary (Completed)</option>
+                  <option value="MBBS Student">MBBS Student (Undergraduate)</option>
+                  <option value="MBBS Completed">MBBS Graduate (Doctor)</option>
+                  <option value="Other">Other Science Qualification</option>
+                </select>
+                <div class="field-error-msg" id="qualificationError">Please select your academic qualification.</div>
+              </div>
+
+              <!-- Preferred Program -->
+              <div>
+                <label for="preferredProgram" class="form-label">Preferred Program <span class="required-star">*</span></label>
+                <select id="preferredProgram" class="form-select" required>
+                  <option value="">Select Preferred Program</option>
+                  <option value="MBBS">MBBS (Undergraduate Medical)</option>
+                  <option value="MD">MD (Doctor of Medicine)</option>
+                  <option value="MS">MS (Master of Surgery)</option>
+                  <option value="General Admission Enquiry">General Admission Enquiry</option>
+                </select>
+                <div class="field-error-msg" id="programError">Please select a preferred program.</div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group-full">
+                <label for="enquiryMessage" class="form-label">Enquiry Message / Academic Questions (Optional)</label>
+                <textarea id="enquiryMessage" class="form-textarea" rows="4" placeholder="Mention your target academic session, score details, or any questions regarding the curriculum and admission timeline..."></textarea>
+              </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 1rem;">
+              <button type="submit" class="btn btn-primary btn-lg">Submit Admission Enquiry</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <div class="footer-brand-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              <path d="M12 17v4M10 19h4" stroke-width="2"/>
+            </svg>
+            MEDICAL COLLEGE WEBSITE
+          </div>
+          <p class="footer-about-text">A modern, demonstration website showcasing educational structures, MBBS curriculums, medical departments, and facilities for Indian medical education institutions.</p>
+          <div class="footer-social-links">
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academic Programs</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Institution</h4>
+          <ul class="footer-nav-list">
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="campus-life.html">Campus Life</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Phone: 0000000000</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email: demo@example.com</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Address: Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-legal-disclaimer">
+          <strong>Disclaimer:</strong> This is a fictional educational website demonstration. All institutional details, academic programs, faculty profiles, statistics, student testimonials, medical facilities, research information, and events are illustrative and do not represent an actual medical institution.
+        </div>
+        <div class="footer-copy-row">
+          <div>&copy; 2026 Medical College Website. Demo Website – All Rights Reserved.</div>
+          <div>Compatible with Hostinger Static Website Hosting | Vanilla HTML5, CSS3 & JavaScript</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Demo Form Success Modal -->
+  <div class="alert-success-modal" id="successModal">
+    <div class="success-modal-card">
+      <div class="success-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <h3 class="success-title">Admission Enquiry Submitted</h3>
+      <p class="success-desc">Thank you! This demonstration form has been validated in the browser. In production, submissions route directly to the designated admissions office.</p>
+      <div class="demo-disclaimer-pill" style="margin-bottom: 1.5rem;">Demo form only. Your information is not transmitted or stored.</div>
+      <button class="btn btn-primary btn-sm" id="closeSuccessModalBtn" style="width: 100%;">Close Notification</button>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Medical College Website Demo</title>
+  <meta name="description" content="Get in touch with our medical college administrative office for demonstration inquiries, academic guidance, and general curriculum questions.">
+  <meta name="robots" content="index, follow">
+  
+  <meta property="og:title" content="Contact Us | Medical College Website Demo">
+  <meta property="og:description" content="Administrative office demonstration contact information, working hours, and message enquiry form.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/about-campus.webp">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="demo-top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-badge">Demonstration Website</span>
+        <span>Generic Indian Medical Education Curriculum & Institution Concept Demo</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:0000000000" class="top-bar-link">Demo Helpline: 0000000000</a>
+        <a href="mailto:demo@example.com" class="top-bar-link">demo@example.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Medical College Website Home">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            <path d="M12 17v4M10 19h4" stroke-width="2.2"/>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">MEDICAL COLLEGE</span>
+          <span class="brand-subtitle">Excellence in Medical Education</span>
+        </div>
+      </a>
+
+            <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+
+          <!-- Academics Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="academics.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Academics
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="academics.html" class="dropdown-link">Academic Programs</a></li>
+              <li><a href="departments.html" class="dropdown-link">Medical Departments</a></li>
+              <li><a href="research.html" class="dropdown-link">Research & Innovation</a></li>
+            </ul>
+          </li>
+
+          <!-- Campus Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="about.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Our Campus
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html" class="dropdown-link">About Our College</a></li>
+              <li><a href="faculty.html" class="dropdown-link">Faculty Mentors</a></li>
+              <li><a href="campus-life.html" class="dropdown-link">Campus Life & Facilities</a></li>
+            </ul>
+          </li>
+
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html#enquirySection" class="portal-demo-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a8.38 8.38 0 0 1 13 0"/></svg>
+          Student Portal
+        </a>
+        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text-wrap">
+        <span class="brand-title">MEDICAL COLLEGE</span>
+        <span class="brand-subtitle">Navigation</span>
+      </div>
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="academics.html" class="nav-link">Academics</a></li>
+      <li><a href="departments.html" class="nav-link">Departments</a></li>
+      <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+      <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+      <li><a href="research.html" class="nav-link">Research</a></li>
+      <li><a href="campus-life.html" class="nav-link">Campus Life</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-cta">
+      <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+      <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner reveal-on-scroll">
+          <div class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Contact Us</span>
+          </div>
+          <span class="section-badge">COMMUNICATION DESK</span>
+          <h1 class="page-hero-title">Contact Us</h1>
+          <p class="page-hero-desc">Have questions regarding curriculum structures, admission guidelines, or demonstration features? Reach out through our sample administrative channels.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Cards & Form Grid (Section 23) -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left Column: Information Cards & CSS Map -->
+          <div class="reveal-on-scroll">
+            <div class="section-header text-left" style="margin-bottom: 2rem;">
+              <span class="section-badge">ADMINISTRATIVE DIRECTORY</span>
+              <h2 class="section-title">Administrative Office</h2>
+              <p class="section-desc">Sample institutional administrative information and visitor guidelines.</p>
+            </div>
+
+            <div class="contact-cards-stack">
+              <!-- Phone -->
+              <div class="contact-info-card">
+                <div class="contact-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <h4 class="contact-card-title">Telephone Inquiries</h4>
+                  <p class="contact-card-text">Primary Phone: 0000000000</p>
+                  <p class="contact-card-text">Alternative Phone: 0000000000</p>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="contact-info-card">
+                <div class="contact-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <h4 class="contact-card-title">Official Email</h4>
+                  <p class="contact-card-text"><a href="mailto:demo@example.com">demo@example.com</a></p>
+                  <p class="contact-card-text" style="font-size: 0.82rem; color: var(--color-muted-text);">Inquiry response window: 24 to 48 hours</p>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div class="contact-info-card">
+                <div class="contact-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <h4 class="contact-card-title">Administrative Address</h4>
+                  <p class="contact-card-text">Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000.</p>
+                </div>
+              </div>
+
+              <!-- Working Hours -->
+              <div class="contact-info-card">
+                <div class="contact-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <h4 class="contact-card-title">Office Working Hours</h4>
+                  <p class="contact-card-text">Monday – Saturday, 9:00 AM – 5:00 PM</p>
+                  <p class="contact-card-text" style="font-size: 0.82rem; color: var(--color-muted-text);">Closed on Sundays and Gazetted National Holidays</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CSS Illustrated Map Box -->
+            <div class="css-map-container">
+              <div class="css-map-content">
+                <div class="map-pin-pulse">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <h3 style="color: #fff; margin-bottom: 0.4rem;">Demonstration Campus Location</h3>
+                <p style="color: rgba(255,255,255,0.8); font-size: 0.92rem; margin-bottom: 1.25rem;">Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000</p>
+                <div style="background: rgba(255,255,255,0.08); border-radius: var(--radius-md); padding: 1rem; font-size: 0.8rem; color: rgba(255,255,255,0.7);">
+                  CSS schematic visualization. No third-party map tracking scripts or live tracking cookies are loaded.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Message / Enquiry Form -->
+          <div class="reveal-on-scroll">
+            <div class="enquiry-form-card" style="max-width: 100%; margin: 0;">
+              <h3 style="margin-bottom: 0.5rem; color: var(--color-navy); font-size: 1.5rem;">Send a Demonstration Message</h3>
+              <p style="margin-bottom: 1.75rem; font-size: 0.95rem;">Submit your questions regarding medical academic modules or website demonstration layouts.</p>
+
+              <div class="form-disclaimer-notice">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span>Demo form only. Your information is validated in the browser and is not transmitted or stored.</span>
+              </div>
+
+              <form id="admissionEnquiryForm" novalidate>
+                <div class="form-grid">
+                  <!-- Full Name -->
+                  <div>
+                    <label for="fullName" class="form-label">Full Name <span class="required-star">*</span></label>
+                    <input type="text" id="fullName" class="form-input" placeholder="e.g. Vikram Verma" required>
+                    <div class="field-error-msg" id="nameError">Please enter your full name.</div>
+                  </div>
+
+                  <!-- Mobile Number -->
+                  <div>
+                    <label for="mobileNumber" class="form-label">Mobile Number <span class="required-star">*</span></label>
+                    <input type="tel" id="mobileNumber" class="form-input" placeholder="e.g. 9876543210" maxlength="10" required>
+                    <div class="form-helper-text">10-digit Indian mobile number</div>
+                    <div class="field-error-msg" id="mobileError">Please enter a valid 10-digit Indian mobile number.</div>
+                  </div>
+
+                  <!-- Email Address -->
+                  <div>
+                    <label for="emailAddress" class="form-label">Email Address <span class="required-star">*</span></label>
+                    <input type="email" id="emailAddress" class="form-input" placeholder="e.g. vikram@example.com" required>
+                    <div class="field-error-msg" id="emailError">Please enter a valid email address.</div>
+                  </div>
+
+                  <!-- City -->
+                  <div>
+                    <label for="city" class="form-label">City <span class="required-star">*</span></label>
+                    <input type="text" id="city" class="form-input" placeholder="e.g. Hyderabad" required>
+                    <div class="field-error-msg" id="cityError">Please enter your city.</div>
+                  </div>
+
+                  <!-- Academic Qualification -->
+                  <div>
+                    <label for="academicQualification" class="form-label">Current Academic Level <span class="required-star">*</span></label>
+                    <select id="academicQualification" class="form-select" required>
+                      <option value="">Select Qualification</option>
+                      <option value="12th Appearing">10+2 Science (Appearing)</option>
+                      <option value="12th Completed">10+2 Science (Completed)</option>
+                      <option value="MBBS Student">Undergraduate MBBS Student</option>
+                      <option value="MBBS Completed">MBBS Graduate Doctor</option>
+                      <option value="Other">Other Academic Background</option>
+                    </select>
+                    <div class="field-error-msg" id="qualificationError">Please select your qualification.</div>
+                  </div>
+
+                  <!-- Preferred Program -->
+                  <div>
+                    <label for="preferredProgram" class="form-label">Query Subject / Program <span class="required-star">*</span></label>
+                    <select id="preferredProgram" class="form-select" required>
+                      <option value="">Select Inquired Program</option>
+                      <option value="MBBS">MBBS Program</option>
+                      <option value="MD">MD Postgraduate Specializations</option>
+                      <option value="MS">MS Surgical Specialties</option>
+                      <option value="General Admission Enquiry">General Admission Enquiry</option>
+                    </select>
+                    <div class="field-error-msg" id="programError">Please select a subject or program.</div>
+                  </div>
+
+                  <!-- Message -->
+                  <div class="form-group-full">
+                    <label for="enquiryMessage" class="form-label">Message Details (Optional)</label>
+                    <textarea id="enquiryMessage" class="form-textarea" rows="4" placeholder="Type your inquiry message here..."></textarea>
+                  </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 1rem;">
+                  <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <div class="footer-brand-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              <path d="M12 17v4M10 19h4" stroke-width="2"/>
+            </svg>
+            MEDICAL COLLEGE WEBSITE
+          </div>
+          <p class="footer-about-text">A modern, demonstration website showcasing educational structures, MBBS curriculums, medical departments, and facilities for Indian medical education institutions.</p>
+          <div class="footer-social-links">
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academic Programs</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Institution</h4>
+          <ul class="footer-nav-list">
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="campus-life.html">Campus Life</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Phone: 0000000000</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email: demo@example.com</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Address: Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-legal-disclaimer">
+          <strong>Disclaimer:</strong> This is a fictional educational website demonstration. All institutional details, academic programs, faculty profiles, statistics, student testimonials, medical facilities, research information, and events are illustrative and do not represent an actual medical institution.
+        </div>
+        <div class="footer-copy-row">
+          <div>&copy; 2026 Medical College Website. Demo Website – All Rights Reserved.</div>
+          <div>Compatible with Hostinger Static Website Hosting | Vanilla HTML5, CSS3 & JavaScript</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Demo Form Success Modal -->
+  <div class="alert-success-modal" id="successModal">
+    <div class="success-modal-card">
+      <div class="success-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <h3 class="success-title">Message Submitted</h3>
+      <p class="success-desc">Thank you! Your demo message details have been validated in the browser. In production, this form sends messages directly to the college administration.</p>
+      <div class="demo-disclaimer-pill" style="margin-bottom: 1.5rem;">Demo form only. Your information is not transmitted or stored.</div>
+      <button class="btn btn-primary btn-sm" id="closeSuccessModalBtn" style="width: 100%;">Close Notification</button>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

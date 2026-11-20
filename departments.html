@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Departments | Medical College Website Demo</title>
+  <meta name="description" content="Explore foundational preclinical, paraclinical, and clinical medical departments essential to comprehensive medical education in India.">
+  <meta name="robots" content="index, follow">
+  
+  <meta property="og:title" content="Medical Departments | Medical College Website Demo">
+  <meta property="og:description" content="Detailed overview of 12 medical departments from Anatomy and Pathology to General Medicine and Surgery.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/anatomy-lab.webp">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="demo-top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-badge">Demonstration Website</span>
+        <span>Generic Indian Medical Education Curriculum & Institution Concept Demo</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:0000000000" class="top-bar-link">Demo Helpline: 0000000000</a>
+        <a href="mailto:demo@example.com" class="top-bar-link">demo@example.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Medical College Website Home">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            <path d="M12 17v4M10 19h4" stroke-width="2.2"/>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">MEDICAL COLLEGE</span>
+          <span class="brand-subtitle">Excellence in Medical Education</span>
+        </div>
+      </a>
+
+            <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+
+          <!-- Academics Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="academics.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Academics
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="academics.html" class="dropdown-link">Academic Programs</a></li>
+              <li><a href="departments.html" class="dropdown-link">Medical Departments</a></li>
+              <li><a href="research.html" class="dropdown-link">Research & Innovation</a></li>
+            </ul>
+          </li>
+
+          <!-- Campus Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="about.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Our Campus
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html" class="dropdown-link">About Our College</a></li>
+              <li><a href="faculty.html" class="dropdown-link">Faculty Mentors</a></li>
+              <li><a href="campus-life.html" class="dropdown-link">Campus Life & Facilities</a></li>
+            </ul>
+          </li>
+
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html#enquirySection" class="portal-demo-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a8.38 8.38 0 0 1 13 0"/></svg>
+          Student Portal
+        </a>
+        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text-wrap">
+        <span class="brand-title">MEDICAL COLLEGE</span>
+        <span class="brand-subtitle">Navigation</span>
+      </div>
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="academics.html" class="nav-link">Academics</a></li>
+      <li><a href="departments.html" class="nav-link active">Departments</a></li>
+      <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+      <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+      <li><a href="research.html" class="nav-link">Research</a></li>
+      <li><a href="campus-life.html" class="nav-link">Campus Life</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-cta">
+      <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+      <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner reveal-on-scroll">
+          <div class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Departments</span>
+          </div>
+          <span class="section-badge">ACADEMIC DISCIPLINES</span>
+          <h1 class="page-hero-title">Explore Medical Departments</h1>
+          <p class="page-hero-desc">Discover the foundational pre-clinical, para-clinical, and clinical medical departments that form the pillars of comprehensive medical education in India.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Medical Departments Detailed Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">CURRICULUM SPECIALIZATIONS</span>
+          <h2 class="section-title">Core Academic & Clinical Departments</h2>
+          <p class="section-desc">Each department integrates classroom pedagogy with laboratory investigation and clinical observations under experienced mentor supervision.</p>
+          <div class="demo-disclaimer-pill">Illustrative Academic Department List – Demonstration Content</div>
+        </div>
+
+        <div class="departments-grid">
+          <!-- 1. Anatomy -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="3"/><path d="M12 8v8"/><path d="M8 12h8"/><path d="M9 20l3-4 3 4"/></svg>
+            </div>
+            <span class="program-type-tag" style="margin-bottom: 0.5rem;">Pre-Clinical</span>
+            <h3 class="dept-title">Anatomy</h3>
+            <p class="dept-desc">Detailed exploration of gross human anatomy, clinical embryology, neuroanatomy, osteology, and microscopic histology slide interpretations.</p>
+            <div class="program-chips-list" style="margin-bottom: 1rem;">
+              <span class="program-chip">Dissection</span>
+              <span class="program-chip">Histology</span>
+              <span class="program-chip">Osteology</span>
+            </div>
+            <p class="stat-subtext" style="margin-top: auto; border-top: 1px solid var(--color-border-grey); padding-top: 0.75rem;">Phase 1 Pre-Clinical Foundation</p>
+          </div>
+
+          <!-- 2. Physiology -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <span class="program-type-tag" style="margin-bottom: 0.5rem;">Pre-Clinical</span>
+            <h3 class="dept-title">Physiology</h3>
+            <p class="dept-desc">Study of vital human bodily functions, cardiac electrical activity, respiratory dynamics, renal filtration, and neuromuscular mechanics.</p>
+            <div class="program-chips-list" style="margin-bottom: 1rem;">
+              <span class="program-chip">Haematology</span>
+              <span class="program-chip">Cardiovascular</span>
+              <span class="program-chip">Neurophysiology</span>
+            </div>
+            <p class="stat-subtext" style="margin-top: auto; border-top: 1px solid var(--color-border-grey); padding-top: 0.75rem;">Phase 1 Pre-Clinical Foundation</p>
+          </div>
+
+          <!-- 3. Biochemistry -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/></svg>
+            </div>
+            <span class="program-type-tag" style="margin-bottom: 0.5rem;">Pre-Clinical</span>
+            <h3 class="dept-title">Biochemistry</h3>
+            <p class="dept-desc">Molecular basis of human health, cellular metabolism, nutrition, genetics, hormonal regulation, and clinical diagnostic chemistry.</p>
+            <div class="program-chips-list" style="margin-bottom: 1rem;">
+              <span class="program-chip">Enzymology</span>
+              <span class="program-chip">Metabolic Pathways</span>
+              <span class="program-chip">Diagnostics</span>
+            </div>
+            <p class="stat-subtext" style="margin-top: auto; border-top: 1px solid var(--color-border-grey); padding-top: 0.75rem;">Phase 1 Pre-Clinical Foundation</p>
+          </div>
+
+          <!-- 4. Pathology -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
+            </div>
+            <span class="program-type-tag" style="margin-bottom: 0.5rem; background: var(--color-light-grey); color: var(--color-navy);">Para-Clinical</span>
+            <h3 class="dept-title">Pathology</h3>
+            <p class="dept-desc">Scientific mechanisms of tissue disease, general pathology, systemic histopathology, hematology, and cytological investigation techniques.</p>
+            <div class="program-chips-list" style="margin-bottom: 1rem;">
+              <span class="program-chip">Histopathology</span>
+              <span class="program-chip">Hematology</span>
+              <span class="program-chip">Cytopathology</span>
+            </div>
+            <p class="stat-subtext" style="margin-top: auto; border-top: 1px solid var(--color-border-grey); padding-top: 0.75rem;">Phase 2 Para-Clinical Bridge</p>
+          </div>
+
+          <!-- 5. Pharmacology -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.5 20.5l10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7z"/><line x1="8.5" y1="8.5" x2="15.5" y2="15.5"/></svg>
+            </div>
+            <span class="program-type-tag" style="margin-bottom: 0.5rem; background: var(--color-light-grey); color: var(--color-navy);">Para-Clinical</span>
+            <h3 class="dept-title">Pharmacology</h3>
+            <p class="dept-desc">Drug mechanisms, therapeutic regimens, pharmacokinetics, adverse drug reaction monitoring, and rational prescription writing skills.</p>
+            <div class="program-chips-list" style="margin-bottom: 1rem;">
+              <span class="program-chip">Therapeutics</span>
+              <span class="program-chip">Toxicology</span>
+              <span class="program-chip">Pharmacovigilance</span>
+            </div>
+            <p class="stat-subtext" style="margin-top: auto; border-top: 1px solid var(--color-border-grey); padding-top: 0.75rem;">Phase 2 Para-Clinical Bridge</p>
+          </div>
+
+          <!-- 6. Microbiology -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v2M8 12h2M12 14v2M14 12h2"/></svg>
+            </div>
+            <span class="program-type-tag" style="margin-bottom: 0.5rem; background: var(--color-light-grey); color: var(--color-navy);">Para-Clinical</span>
+            <h3 class="dept-title">Microbiology</h3>
+            <p class="dept-desc">Study of infectious pathogens, bacteriology, virology, clinical immunology, antimicrobial susceptibility testing, and hospital infection control.</p>
+            <div class="program-chips-list" style="margin-bottom: 1rem;">
+              <span class="program-chip">Bacteriology</span>
+              <span class="program-chip">Virology</span>
+              <span class="program-chip">Infection Control</span>
+            </div>
+            <p class="stat-subtext" style="margin-top: auto; border-top: 1px solid var(--color-border-grey); padding-top: 0.75rem;">Phase 2 Para-Clinical Bridge</p>
+          </div>
+
+          <!-- 7. Community Medicine -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <span class="program-type-tag" style="margin-bottom: 0.5rem; background: var(--color-light-grey); color: var(--color-navy);">Public Health</span>
+            <h3 class="dept-title">Community Medicine</h3>
+            <p class="dept-desc">Epidemiology, public health administration, maternal and child welfare, occupational medicine, and national health mission programs.</p>
+            <div class="program-chips-list" style="margin-bottom: 1rem;">
+              <span class="program-chip">Epidemiology</span>
+              <span class="program-chip">Rural Outreach</span>
+              <span class="program-chip">Preventive Care</span>
+            </div>
+            <p class="stat-subtext" style="margin-top: auto; border-top: 1px solid var(--color-border-grey); padding-top: 0.75rem;">Community & Preventive Health</p>
+          </div>
+
+          <!-- 8. General Medicine -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="12" y1="9" x2="12" y2="15"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
+            </div>
+            <span class="program-type-tag" style="margin-bottom: 0.5rem; background: var(--color-blue); color: #fff;">Clinical Discipline</span>
+            <h3 class="dept-title">General Medicine</h3>
+            <p class="dept-desc">Comprehensive adult disease diagnosis, non-invasive therapies, acute medical emergencies, intensive care management, and bedside ethics.</p>
+            <div class="program-chips-list" style="margin-bottom: 1rem;">
+              <span class="program-chip">Internal Medicine</span>
+              <span class="program-chip">Cardiology</span>
+              <span class="program-chip">Critical Care</span>
+            </div>
+            <p class="stat-subtext" style="margin-top: auto; border-top: 1px solid var(--color-border-grey); padding-top: 0.75rem;">Phase 3 Clinical Mastery</p>
+          </div>
+
+          <!-- 9. General Surgery -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 4h-5L7 7l4 4 4-4-2.5-3z"/><line x1="11" y1="11" x2="19" y2="19"/><circle cx="19" cy="19" r="2"/></svg>
+            </div>
+            <span class="program-type-tag" style="margin-bottom: 0.5rem; background: var(--color-blue); color: #fff;">Clinical Discipline</span>
+            <h3 class="dept-title">General Surgery</h3>
+            <p class="dept-desc">Surgical pathology, pre- and post-operative management, wound care, minimally invasive techniques, and emergency trauma resuscitation.</p>
+            <div class="program-chips-list" style="margin-bottom: 1rem;">
+              <span class="program-chip">Trauma Care</span>
+              <span class="program-chip">Operative Skills</span>
+              <span class="program-chip">Laparoscopy</span>
+            </div>
+            <p class="stat-subtext" style="margin-top: auto; border-top: 1px solid var(--color-border-grey); padding-top: 0.75rem;">Phase 3 Clinical Mastery</p>
+          </div>
+
+          <!-- 10. Paediatrics -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21a9 9 0 1 0-9-9c0 1.48.36 2.88 1 4.11L3 21l4.89-1c1.23.64 2.63 1 4.11 1z"/></svg>
+            </div>
+            <span class="program-type-tag" style="margin-bottom: 0.5rem; background: var(--color-blue); color: #fff;">Clinical Discipline</span>
+            <h3 class="dept-title">Paediatrics</h3>
+            <p class="dept-desc">Childhood development, pediatric infectious diseases, nutritional deficiencies, neonatal intensive care protocols, and child advocacy.</p>
+            <div class="program-chips-list" style="margin-bottom: 1rem;">
+              <span class="program-chip">Neonatology</span>
+              <span class="program-chip">Immunization</span>
+              <span class="program-chip">Development</span>
+            </div>
+            <p class="stat-subtext" style="margin-top: auto; border-top: 1px solid var(--color-border-grey); padding-top: 0.75rem;">Phase 3 Clinical Mastery</p>
+          </div>
+
+          <!-- 11. Orthopaedics -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <span class="program-type-tag" style="margin-bottom: 0.5rem; background: var(--color-blue); color: #fff;">Clinical Discipline</span>
+            <h3 class="dept-title">Orthopaedics</h3>
+            <p class="dept-desc">Management of fractures, joint dislocations, degenerative bone diseases, sports injuries, and musculoskeletal surgical interventions.</p>
+            <div class="program-chips-list" style="margin-bottom: 1rem;">
+              <span class="program-chip">Traumatology</span>
+              <span class="program-chip">Joint Care</span>
+              <span class="program-chip">Rehabilitation</span>
+            </div>
+            <p class="stat-subtext" style="margin-top: auto; border-top: 1px solid var(--color-border-grey); padding-top: 0.75rem;">Phase 3 Clinical Mastery</p>
+          </div>
+
+          <!-- 12. Obstetrics and Gynaecology -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="9" r="6"/><path d="M12 15v7M9 19h6"/></svg>
+            </div>
+            <span class="program-type-tag" style="margin-bottom: 0.5rem; background: var(--color-blue); color: #fff;">Clinical Discipline</span>
+            <h3 class="dept-title">Obstetrics and Gynaecology</h3>
+            <p class="dept-desc">Comprehensive maternal healthcare, antenatal monitoring, safe labour and delivery care, reproductive endocrinology, and gynecological surgery.</p>
+            <div class="program-chips-list" style="margin-bottom: 1rem;">
+              <span class="program-chip">Maternal Care</span>
+              <span class="program-chip">Labor Ward</span>
+              <span class="program-chip">Reproductive Health</span>
+            </div>
+            <p class="stat-subtext" style="margin-top: auto; border-top: 1px solid var(--color-border-grey); padding-top: 0.75rem;">Phase 3 Clinical Mastery</p>
+          </div>
+        </div>
+
+        <div class="timeline-disclaimer-box reveal-on-scroll" style="margin-top: 3.5rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div>
+            <div class="timeline-disclaimer-title">Illustrative Content Notice</div>
+            <p class="timeline-disclaimer-text">These 12 department descriptions are illustrative website demonstration content to showcase academic layouts for medical institutions. They do not represent a verified institutional department list or clinical hospital service claims.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="faculty.html" class="btn btn-primary btn-lg">Explore Academic Faculty Mentors</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <div class="footer-brand-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              <path d="M12 17v4M10 19h4" stroke-width="2"/>
+            </svg>
+            MEDICAL COLLEGE WEBSITE
+          </div>
+          <p class="footer-about-text">A modern, demonstration website showcasing educational structures, MBBS curriculums, medical departments, and facilities for Indian medical education institutions.</p>
+          <div class="footer-social-links">
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academic Programs</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Institution</h4>
+          <ul class="footer-nav-list">
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="campus-life.html">Campus Life</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Phone: 0000000000</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email: demo@example.com</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Address: Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-legal-disclaimer">
+          <strong>Disclaimer:</strong> This is a fictional educational website demonstration. All institutional details, academic programs, faculty profiles, statistics, student testimonials, medical facilities, research information, and events are illustrative and do not represent an actual medical institution.
+        </div>
+        <div class="footer-copy-row">
+          <div>&copy; 2026 Medical College Website. Demo Website – All Rights Reserved.</div>
+          <div>Compatible with Hostinger Static Website Hosting | Vanilla HTML5, CSS3 & JavaScript</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

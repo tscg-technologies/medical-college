@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Life & Facilities | Medical College Website Demo</title>
+  <meta name="description" content="Explore campus life, student activities, academic seminars, sports, central library, and hostel facilities in this medical college demonstration website.">
+  <meta name="robots" content="index, follow">
+  
+  <meta property="og:title" content="Campus Life & Facilities | Medical College Website Demo">
+  <meta property="og:description" content="Holistic student community, academic facilities, hostel amenities, and campus life gallery.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/student-life.webp">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="demo-top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-badge">Demonstration Website</span>
+        <span>Generic Indian Medical Education Curriculum & Institution Concept Demo</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:0000000000" class="top-bar-link">Demo Helpline: 0000000000</a>
+        <a href="mailto:demo@example.com" class="top-bar-link">demo@example.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Medical College Website Home">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            <path d="M12 17v4M10 19h4" stroke-width="2.2"/>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">MEDICAL COLLEGE</span>
+          <span class="brand-subtitle">Excellence in Medical Education</span>
+        </div>
+      </a>
+
+            <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+
+          <!-- Academics Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="academics.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Academics
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="academics.html" class="dropdown-link">Academic Programs</a></li>
+              <li><a href="departments.html" class="dropdown-link">Medical Departments</a></li>
+              <li><a href="research.html" class="dropdown-link">Research & Innovation</a></li>
+            </ul>
+          </li>
+
+          <!-- Campus Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="about.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Our Campus
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html" class="dropdown-link">About Our College</a></li>
+              <li><a href="faculty.html" class="dropdown-link">Faculty Mentors</a></li>
+              <li><a href="campus-life.html" class="dropdown-link">Campus Life & Facilities</a></li>
+            </ul>
+          </li>
+
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html#enquirySection" class="portal-demo-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a8.38 8.38 0 0 1 13 0"/></svg>
+          Student Portal
+        </a>
+        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text-wrap">
+        <span class="brand-title">MEDICAL COLLEGE</span>
+        <span class="brand-subtitle">Navigation</span>
+      </div>
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="academics.html" class="nav-link">Academics</a></li>
+      <li><a href="departments.html" class="nav-link">Departments</a></li>
+      <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+      <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+      <li><a href="research.html" class="nav-link">Research</a></li>
+      <li><a href="campus-life.html" class="nav-link active">Campus Life</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-cta">
+      <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+      <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner reveal-on-scroll">
+          <div class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Campus Life</span>
+          </div>
+          <span class="section-badge">CAMPUS COMMUNITY</span>
+          <h1 class="page-hero-title">Experience Learning Beyond the Classroom</h1>
+          <p class="page-hero-desc">Discover an engaging educational atmosphere where academic rigor meets peer collaboration, cultural celebrations, sports wellness, and student community support.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campus Life Overview -->
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content-column reveal-on-scroll">
+            <span class="section-badge">STUDENT LIFE</span>
+            <h2 class="section-title">A Balanced Environment for Aspiring Doctors</h2>
+            <p style="margin-bottom: 1.25rem;">Medical training is renowned for its academic demands. A supportive campus environment provides students with spaces for relaxation, group study, physical wellness, and cultural expression.</p>
+            <p style="margin-bottom: 2rem;">Our conceptual campus life fosters teamwork, peer-to-peer mentoring, community healthcare awareness camps, and recreational outlets that maintain mental and physical well-being throughout the rigorous medical curriculum.</p>
+
+            <div class="about-values-grid" style="margin: 0;">
+              <div class="value-card">
+                <h4 class="value-card-title">Peer Mentorship</h4>
+                <p class="value-card-desc">Senior batch study circles and collaborative exam preparation groups.</p>
+              </div>
+              <div class="value-card">
+                <h4 class="value-card-title">Holistic Wellness</h4>
+                <p class="value-card-desc">Gymnasium facilities, sports activities, and student counseling services.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image-column reveal-on-scroll">
+            <div class="about-image-wrapper">
+              <img src="assets/images/student-life.webp" alt="Medical Student Community Life">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campus Facilities (Section 17) -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">CAMPUS INFRASTRUCTURE</span>
+          <h2 class="section-title">Explore Campus Facilities</h2>
+          <p class="section-desc">Key physical infrastructure designed to support intensive medical learning, quiet research, and student residential comfort.</p>
+          <div class="demo-disclaimer-pill">Illustrative Demonstration Facilities – Conceptual Visuals</div>
+        </div>
+
+        <div class="facilities-grid">
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/medical-classroom.webp" alt="Modern Academic Classrooms">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Modern Classrooms</h3>
+              <p class="facility-desc">Ergonomic tiered lecture halls with audiovisual technology and multimedia connectivity.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/anatomy-lab.webp" alt="Medical Laboratories">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Medical Laboratories</h3>
+              <p class="facility-desc">Specialized preclinical and paraclinical practical learning labs with individual workstations.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/library.webp" alt="Central Library">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Central Library</h3>
+              <p class="facility-desc">Extensive medical textbook collections, international journal subscriptions, and quiet reading halls.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/seminar-hall.webp" alt="Seminar Auditorium">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Seminar Auditorium</h3>
+              <p class="facility-desc">Acoustically engineered hall hosting scientific conferences, white coat ceremonies, and guest lectures.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/campus-gallery-03.webp" alt="Student Study Areas">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Student Study Areas</h3>
+              <p class="facility-desc">Dedicated group discussion zones and private study cubicles with high-speed internet access.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/student-life.webp" alt="Hostel Facilities">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Hostel Facilities</h3>
+              <p class="facility-desc">Comfortable residential accommodations with 24/7 security, Wi-Fi, and dining mess provisions.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/campus-gallery-04.webp" alt="Sports and Recreation">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Sports and Recreation</h3>
+              <p class="facility-desc">Outdoor football and cricket turf, badminton courts, indoor games room, and fitness gymnasium.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/about-campus.webp" alt="Student Common Areas">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Student Common Areas</h3>
+              <p class="facility-desc">Landscaped courtyard gardens and campus cafeteria providing comfortable spaces for peer interaction.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campus Life Image Gallery with Lightbox (Section 18) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">CAMPUS GALLERY</span>
+          <h2 class="section-title">Campus Life Moments</h2>
+          <p class="section-desc">Click on any visual to expand full-screen in the interactive lightbox viewer.</p>
+          <div class="demo-disclaimer-pill">AI-Generated Demonstration Visuals – No Real Student Identities</div>
+        </div>
+
+        <div class="gallery-filter-bar reveal-on-scroll">
+          <button class="gallery-filter-btn active" data-filter="all">All Moments</button>
+          <button class="gallery-filter-btn" data-filter="academic">Academic & Study</button>
+          <button class="gallery-filter-btn" data-filter="events">Seminars & Events</button>
+          <button class="gallery-filter-btn" data-filter="campus">Campus Grounds</button>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item reveal-on-scroll" data-category="academic">
+            <img src="assets/images/campus-gallery-01.webp" alt="Student Practical Discussions">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Academic Discussions</span>
+              <h4 class="gallery-item-title">Collaborative Clinical Case Study</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-on-scroll" data-category="events">
+            <img src="assets/images/campus-gallery-02.webp" alt="Academic Medical Symposium">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Academic Seminars</span>
+              <h4 class="gallery-item-title">Annual Medical Science Symposium</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-on-scroll" data-category="academic">
+            <img src="assets/images/campus-gallery-03.webp" alt="Central Reading Commons">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Library & Study</span>
+              <h4 class="gallery-item-title">Quiet Study Commons</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-on-scroll" data-category="campus">
+            <img src="assets/images/campus-gallery-04.webp" alt="Campus Sports and Wellness">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Recreation</span>
+              <h4 class="gallery-item-title">Campus Sports & Recreation</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-on-scroll" data-category="events">
+            <img src="assets/images/seminar-hall.webp" alt="Auditorium Scientific Conference">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Conferences</span>
+              <h4 class="gallery-item-title">Scientific Conference Colloquium</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-on-scroll" data-category="campus">
+            <img src="assets/images/hero-campus.webp" alt="Contemporary Medical Campus Architecture">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Campus Architecture</span>
+              <h4 class="gallery-item-title">Academic Campus Grounds</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-on-scroll" data-category="academic">
+            <img src="assets/images/medical-classroom.webp" alt="Interactive Smart Lecture Hall">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Lecture Theatres</span>
+              <h4 class="gallery-item-title">Interactive Smart Classroom</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-on-scroll" data-category="academic">
+            <img src="assets/images/microbiology-lab.webp" alt="Microbiology Investigation Laboratory">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Laboratory Training</span>
+              <h4 class="gallery-item-title">Practical Diagnostic Lab</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-disclaimer-box reveal-on-scroll" style="margin-top: 3.5rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div>
+            <div class="timeline-disclaimer-title">Campus Life Disclaimer</div>
+            <p class="timeline-disclaimer-text">All campus photographs and facility descriptions represent illustrative demonstration assets. They do not claim that these facilities are verified or available at an actual institution.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <div class="footer-brand-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              <path d="M12 17v4M10 19h4" stroke-width="2"/>
+            </svg>
+            MEDICAL COLLEGE WEBSITE
+          </div>
+          <p class="footer-about-text">A modern, demonstration website showcasing educational structures, MBBS curriculums, medical departments, and facilities for Indian medical education institutions.</p>
+          <div class="footer-social-links">
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academic Programs</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Institution</h4>
+          <ul class="footer-nav-list">
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="campus-life.html">Campus Life</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Phone: 0000000000</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email: demo@example.com</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Address: Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-legal-disclaimer">
+          <strong>Disclaimer:</strong> This is a fictional educational website demonstration. All institutional details, academic programs, faculty profiles, statistics, student testimonials, medical facilities, research information, and events are illustrative and do not represent an actual medical institution.
+        </div>
+        <div class="footer-copy-row">
+          <div>&copy; 2026 Medical College Website. Demo Website – All Rights Reserved.</div>
+          <div>Compatible with Hostinger Static Website Hosting | Vanilla HTML5, CSS3 & JavaScript</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close image modal">&times;</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

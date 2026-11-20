@@ -1,0 +1,1637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical College Website | Medical Education Demo</title>
+  <meta name="description" content="Explore a modern medical college website demo featuring MBBS education, academic departments, medical laboratories, admissions, faculty, research, and campus life in India.">
+  <meta name="keywords" content="Medical College Website, MBBS Education India, Medical Departments, Medical Faculty, Medical Admissions Demo">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Medical College Website | Medical Education Demo">
+  <meta property="og:description" content="A premium demonstration website showcasing medical education, MBBS curriculum, laboratories, faculty, and academic life for Indian institutions.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/hero-campus.webp">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement / Demo Disclaimer Bar -->
+  <div class="demo-top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-badge">Demonstration Website</span>
+        <span>Generic Indian Medical Education Curriculum & Institution Concept Demo</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:0000000000" class="top-bar-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Demo Helpline: 0000000000
+        </a>
+        <a href="mailto:demo@example.com" class="top-bar-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          demo@example.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Main Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <!-- Original Medical Education Emblem & Generic Title -->
+      <a href="index.html" class="brand-logo" aria-label="Medical College Website Home">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Graduation Cap -->
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            <!-- Medical Cross Accent -->
+            <path d="M12 17v4M10 19h4" stroke-width="2.2"/>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">MEDICAL COLLEGE</span>
+    
+        </div>
+      </a>
+
+            <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+
+          <!-- Academics Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="academics.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Academics
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="academics.html" class="dropdown-link">Academic Programs</a></li>
+              <li><a href="departments.html" class="dropdown-link">Medical Departments</a></li>
+              <li><a href="research.html" class="dropdown-link">Research & Innovation</a></li>
+            </ul>
+          </li>
+
+          <!-- Campus Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="about.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Our Campus
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html" class="dropdown-link">About Our College</a></li>
+              <li><a href="faculty.html" class="dropdown-link">Faculty Mentors</a></li>
+              <li><a href="campus-life.html" class="dropdown-link">Campus Life & Facilities</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="#enquirySection" class="portal-demo-btn" title="Demonstration Student Portal Link">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a8.38 8.38 0 0 1 13 0"/></svg>
+          Student Portal
+        </a>
+        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay & Menu -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text-wrap">
+        <span class="brand-title">MEDICAL COLLEGE</span>
+        <span class="brand-subtitle">Navigation</span>
+      </div>
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="academics.html" class="nav-link">Academics</a></li>
+      <li><a href="departments.html" class="nav-link">Departments</a></li>
+      <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+      <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+      <li><a href="research.html" class="nav-link">Research</a></li>
+      <li><a href="campus-life.html" class="nav-link">Campus Life</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-cta">
+      <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+      <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Section 5: Homepage Hero Section -->
+    <section class="hero-section">
+      <div class="hero-bg-media">
+        <img src="assets/images/hero-campus.webp" alt="Contemporary Medical Education Campus Architecture" loading="eager">
+      </div>
+      <div class="hero-overlay-gradient"></div>
+      <div class="hero-grid-pattern"></div>
+      
+      <div class="container">
+        <div class="hero-content-wrap reveal-on-scroll">
+          <div class="hero-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            Medical Education Demonstration Website
+          </div>
+          <h1 class="hero-title">Shaping the Future of Healthcare Through Medical Education</h1>
+          <p class="hero-desc">Discover a learning environment focused on medical knowledge, scientific research, clinical understanding, professional ethics, and the development of future healthcare professionals.</p>
+          
+          <div class="hero-cta-group">
+            <a href="academics.html" class="btn btn-primary btn-lg btn-icon-right">
+              Explore Academic Programs
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+            <a href="#enquirySection" class="btn btn-outline-white btn-lg">Admission Enquiry</a>
+          </div>
+
+          <!-- Floating Information Cards -->
+          <div class="hero-floating-cards">
+            <div class="floating-card">
+              <div class="floating-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              </div>
+              <div>
+                <h4 class="floating-card-title">Excellence in Medical Education</h4>
+                <p class="floating-card-desc">Comprehensive curriculum framework grounded in medical sciences.</p>
+              </div>
+            </div>
+
+            <div class="floating-card">
+              <div class="floating-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </div>
+              <div>
+                <h4 class="floating-card-title">Practical Learning Environment</h4>
+                <p class="floating-card-desc">Advanced laboratory training and clinical observation protocols.</p>
+              </div>
+            </div>
+
+            <div class="floating-card">
+              <div class="floating-card-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <h4 class="floating-card-title">Research and Innovation</h4>
+                <p class="floating-card-desc">Fostering analytical curiosity and evidence-based clinical practices.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Statistics Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-card-container reveal-on-scroll">
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="15">0</span>
+              <span class="stat-plus">+</span>
+            </div>
+            <div class="stat-label">Years of Academic Excellence</div>
+            <p class="stat-subtext">Sample Demonstration Figure</p>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="20">0</span>
+              <span class="stat-plus">+</span>
+            </div>
+            <div class="stat-label">Academic Learning Modules</div>
+            <p class="stat-subtext">Illustrative Curriculum Depth</p>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="500">0</span>
+              <span class="stat-plus">+</span>
+            </div>
+            <div class="stat-label">Student Community</div>
+            <p class="stat-subtext">Sample Demonstration Cohort</p>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="10">0</span>
+              <span class="stat-plus">+</span>
+            </div>
+            <div class="stat-label">Medical Learning Facilities</div>
+            <p class="stat-subtext">Conceptual Teaching Labs</p>
+          </div>
+        </div>
+        <p class="stat-disclaimer-note">* All figures displayed are illustrative demonstration data to showcase website layout capabilities and do not represent verified institutional metrics.</p>
+      </div>
+    </section>
+
+    <!-- Section 7: About Our College -->
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-column reveal-on-scroll">
+            <div class="about-image-wrapper">
+              <img src="assets/images/about-campus.webp" alt="Demonstration Medical College Campus Architecture">
+            </div>
+            
+          </div>
+
+          <div class="about-content-column reveal-on-scroll">
+            <span class="section-badge">ABOUT OUR COLLEGE</span>
+            <h2 class="section-title">Developing the Next Generation of Healthcare Professionals</h2>
+            <p class="section-desc">Medical education requires a strong foundation in scientific knowledge, clinical understanding, ethical practice, and lifelong learning. This demonstration website presents a modern educational environment focused on preparing students for future healthcare responsibilities.</p>
+
+            <div class="about-values-grid">
+              <div class="value-card">
+                <h4 class="value-card-title">Our Mission</h4>
+                <p class="value-card-desc">To encourage scientific learning, medical knowledge, research, compassion, and ethical professional development.</p>
+              </div>
+
+              <div class="value-card">
+                <h4 class="value-card-title">Our Vision</h4>
+                <p class="value-card-desc">To inspire future healthcare professionals who contribute positively to society through knowledge, responsibility, and innovation.</p>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 0.75rem; color: var(--color-navy);">Core Institutional Values:</h4>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                <span class="step-highlight-chip">Compassion</span>
+                <span class="step-highlight-chip">Integrity</span>
+                <span class="step-highlight-chip">Academic Excellence</span>
+                <span class="step-highlight-chip">Innovation</span>
+                <span class="step-highlight-chip">Professional Ethics</span>
+                <span class="step-highlight-chip">Continuous Learning</span>
+              </div>
+            </div>
+
+            <div>
+              <a href="about.html" class="btn btn-primary btn-icon-right">
+                Discover More
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Academic Programs -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">ACADEMIC PROGRAMS</span>
+          <h2 class="section-title">Explore Our Medical Academic Programs</h2>
+          <p class="section-desc">Comprehensive medical education pathways structured around foundational pre-clinical subjects, para-clinical sciences, and supervised clinical learning.</p>
+          <div class="demo-disclaimer-pill">Illustrative Program Structure – Subject to Regulatory Approvals</div>
+        </div>
+
+        <div class="programs-grid">
+          <!-- Program 1: MBBS -->
+          <div class="program-card reveal-on-scroll">
+            <span class="program-type-tag">Undergraduate Medical Program</span>
+            <h3 class="program-title">MBBS</h3>
+            <p class="program-desc">An undergraduate medical education program designed to provide foundational medical knowledge, scientific understanding, and clinical learning.</p>
+            
+            <div class="program-meta">
+              <div class="meta-item">
+                <span class="meta-label">Duration</span>
+                <span class="meta-val">4.5 Years + 1 Yr Internship</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Format</span>
+                <span class="meta-val">Full-Time Academic</span>
+              </div>
+            </div>
+
+            <h4 class="program-areas-title">Core Learning Areas:</h4>
+            <div class="program-chips-list">
+              <span class="program-chip">Anatomy</span>
+              <span class="program-chip">Physiology</span>
+              <span class="program-chip">Biochemistry</span>
+              <span class="program-chip">Pathology</span>
+              <span class="program-chip">Pharmacology</span>
+              <span class="program-chip">Microbiology</span>
+              <span class="program-chip">Community Medicine</span>
+              <span class="program-chip">Clinical Subjects</span>
+            </div>
+
+            <div class="program-card-footer">
+              <a href="academics.html" class="btn btn-secondary btn-sm" style="width: 100%;">View Curriculum Overview</a>
+              <p class="program-disclaimer">* General educational information. Actual seat intake, recognition, and eligibility depend on applicable statutory approvals.</p>
+            </div>
+          </div>
+
+          <!-- Program 2: MD Programs -->
+          <div class="program-card reveal-on-scroll">
+            <span class="program-type-tag">Postgraduate Medical Sciences</span>
+            <h3 class="program-title">MD Programs</h3>
+            <p class="program-desc">Postgraduate medical education pathways across different medical specializations emphasizing diagnostic mastery and clinical research.</p>
+            
+            <div class="program-meta">
+              <div class="meta-item">
+                <span class="meta-label">Duration</span>
+                <span class="meta-val">3 Years (Residency)</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Eligibility</span>
+                <span class="meta-val">Recognized MBBS + NEET-PG</span>
+              </div>
+            </div>
+
+            <h4 class="program-areas-title">Sample Specialization Categories:</h4>
+            <div class="program-chips-list">
+              <span class="program-chip">General Medicine</span>
+              <span class="program-chip">Paediatrics</span>
+              <span class="program-chip">Dermatology</span>
+              <span class="program-chip">Anaesthesiology</span>
+              <span class="program-chip">Radiology</span>
+              <span class="program-chip">Pathology</span>
+            </div>
+
+            <div class="program-card-footer">
+              <a href="academics.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore MD Disciplines</a>
+              <p class="program-disclaimer">* Illustrative specialization categories for educational demonstration purposes.</p>
+            </div>
+          </div>
+
+          <!-- Program 3: MS Programs -->
+          <div class="program-card reveal-on-scroll">
+            <span class="program-type-tag">Postgraduate Surgical Specialties</span>
+            <h3 class="program-title">MS Programs</h3>
+            <p class="program-desc">Postgraduate surgical education pathways focused on surgical knowledge, clinical practice, operative simulation, and professional development.</p>
+            
+            <div class="program-meta">
+              <div class="meta-item">
+                <span class="meta-label">Duration</span>
+                <span class="meta-val">3 Years (Surgical Training)</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Eligibility</span>
+                <span class="meta-val">Recognized MBBS + NEET-PG</span>
+              </div>
+            </div>
+
+            <h4 class="program-areas-title">Sample Surgical Categories:</h4>
+            <div class="program-chips-list">
+              <span class="program-chip">General Surgery</span>
+              <span class="program-chip">Orthopaedics</span>
+              <span class="program-chip">Ophthalmology</span>
+              <span class="program-chip">Obstetrics & Gynaecology</span>
+              <span class="program-chip">ENT (Otorhinolaryngology)</span>
+            </div>
+
+            <div class="program-card-footer">
+              <a href="academics.html" class="btn btn-secondary btn-sm" style="width: 100%;">Explore MS Disciplines</a>
+              <p class="program-disclaimer">* General surgical educational information for prospective Indian medical scholars.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 9: Medical Departments Preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">MEDICAL DEPARTMENTS</span>
+          <h2 class="section-title">Explore Medical Departments</h2>
+          <p class="section-desc">Key preclinical, paraclinical, and clinical departments essential to comprehensive medical education and foundational scientific inquiry.</p>
+          <div class="demo-disclaimer-pill">Illustrative Academic Departments Overview</div>
+        </div>
+
+        <div class="departments-grid">
+          <!-- 1. Anatomy -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="3"/><path d="M12 8v8"/><path d="M8 12h8"/><path d="M9 20l3-4 3 4"/></svg>
+            </div>
+            <h3 class="dept-title">Anatomy</h3>
+            <p class="dept-desc">Study of human structural organization, gross anatomy, histology, embryology, and osteology.</p>
+            <a href="departments.html" class="dept-link">Learn More &rarr;</a>
+          </div>
+
+          <!-- 2. Physiology -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="dept-title">Physiology</h3>
+            <p class="dept-desc">Exploration of bodily systems, homeostasis, neurophysiology, cardiovascular and respiratory mechanisms.</p>
+            <a href="departments.html" class="dept-link">Learn More &rarr;</a>
+          </div>
+
+          <!-- 3. Biochemistry -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/></svg>
+            </div>
+            <h3 class="dept-title">Biochemistry</h3>
+            <p class="dept-desc">Molecular mechanisms of cellular life, metabolic pathways, enzymology, and clinical diagnostics.</p>
+            <a href="departments.html" class="dept-link">Learn More &rarr;</a>
+          </div>
+
+          <!-- 4. Pathology -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
+            </div>
+            <h3 class="dept-title">Pathology</h3>
+            <p class="dept-desc">Investigation of disease causes, morbid anatomy, cellular alterations, hematology, and clinical pathology.</p>
+            <a href="departments.html" class="dept-link">Learn More &rarr;</a>
+          </div>
+
+          <!-- 5. Pharmacology -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.5 20.5l10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7z"/><line x1="8.5" y1="8.5" x2="15.5" y2="15.5"/></svg>
+            </div>
+            <h3 class="dept-title">Pharmacology</h3>
+            <p class="dept-desc">Principles of drug interactions, pharmacokinetics, therapeutic applications, and toxicology.</p>
+            <a href="departments.html" class="dept-link">Learn More &rarr;</a>
+          </div>
+
+          <!-- 6. Microbiology -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v2M8 12h2M12 14v2M14 12h2"/></svg>
+            </div>
+            <h3 class="dept-title">Microbiology</h3>
+            <p class="dept-desc">Bacteriology, virology, mycology, immunology, and infectious disease prevention mechanisms.</p>
+            <a href="departments.html" class="dept-link">Learn More &rarr;</a>
+          </div>
+
+          <!-- 7. General Medicine -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="12" y1="9" x2="12" y2="15"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
+            </div>
+            <h3 class="dept-title">General Medicine</h3>
+            <p class="dept-desc">Comprehensive adult disease diagnosis, non-surgical management, and clinical problem solving.</p>
+            <a href="departments.html" class="dept-link">Learn More &rarr;</a>
+          </div>
+
+          <!-- 8. General Surgery -->
+          <div class="department-card reveal-on-scroll">
+            <div class="dept-icon-wrapper">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 4h-5L7 7l4 4 4-4-2.5-3z"/><line x1="11" y1="11" x2="19" y2="19"/><circle cx="19" cy="19" r="2"/></svg>
+            </div>
+            <h3 class="dept-title">General Surgery</h3>
+            <p class="dept-desc">Surgical pathology, operative techniques, trauma care, pre- and post-operative management principles.</p>
+            <a href="departments.html" class="dept-link">Learn More &rarr;</a>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="departments.html" class="btn btn-secondary btn-icon-right">
+            View All 12 Medical Departments
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 10: Why Choose Our College? -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">INSTITUTIONAL STRENGTHS</span>
+          <h2 class="section-title">Building a Strong Foundation for Medical Careers</h2>
+          <p class="section-desc">Key pillars designed to support aspiring medical doctors through rigor, evidence-based practices, and values of ethical care.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <h3 class="feature-title">Structured Medical Learning</h3>
+            <p class="feature-desc">Integrated modular pedagogy aligned with standard competency-based medical education benchmarks.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/></svg>
+            </div>
+            <h3 class="feature-title">Practical Laboratory Experience</h3>
+            <p class="feature-desc">Supervised practical sessions in anatomy dissection, histopathology, biochemistry, and microbiology.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3 class="feature-title">Clinical Learning Environment</h3>
+            <p class="feature-desc">Observation-driven clinical rotations fostering patient bedside rapport and diagnostic assessment skills.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="feature-title">Experienced Academic Mentors</h3>
+            <p class="feature-desc">Faculty mentors providing individualized academic guidance, clinical insights, and ethical counseling.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="feature-title">Research and Innovation</h3>
+            <p class="feature-desc">Opportunities for undergraduate research participation, medical paper writing, and symposium presentations.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3 class="feature-title">Professional Ethics and Patient Care</h3>
+            <p class="feature-desc">Core training in medical jurisprudence, patient empathy, communication, and professional conduct.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 11: Medical Laboratories -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">LABORATORIES & INFRASTRUCTURE</span>
+          <h2 class="section-title">Learn Through Practical Scientific Experience</h2>
+          <p class="section-desc">Practical laboratory training bridges basic theoretical medical concepts with hands-on diagnostic and scientific methodologies.</p>
+          <div class="demo-disclaimer-pill">Illustrative Demonstration Facilities</div>
+        </div>
+
+        <div class="labs-grid">
+          <!-- Lab 1: Anatomy -->
+          <div class="lab-card reveal-on-scroll">
+            <div class="lab-image-box">
+              <img src="assets/images/anatomy-lab.webp" alt="Human Anatomy Laboratory Setup">
+              <span class="lab-tag">Pre-Clinical</span>
+            </div>
+            <div class="lab-content">
+              <h3 class="lab-title">Anatomy Laboratory</h3>
+              <p class="lab-desc">Equipped with dissection facilities, articulated skeleton models, preserved organ specimens, and histology projection microscopes.</p>
+              <div class="lab-features-list">
+                <span class="lab-pill">Cadaveric Dissection</span>
+                <span class="lab-pill">Osteology</span>
+                <span class="lab-pill">Histology Slides</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lab 2: Physiology -->
+          <div class="lab-card reveal-on-scroll">
+            <div class="lab-image-box">
+              <img src="assets/images/physiology-lab.webp" alt="Human Physiology Practical Laboratory">
+              <span class="lab-tag">Pre-Clinical</span>
+            </div>
+            <div class="lab-content">
+              <h3 class="lab-title">Physiology Laboratory</h3>
+              <p class="lab-desc">Facilities for haematological experiments, spirometry, nerve-muscle physiology experiments, ECG observation, and clinical reflex examination.</p>
+              <div class="lab-features-list">
+                <span class="lab-pill">Haematology</span>
+                <span class="lab-pill">Clinical Ergometry</span>
+                <span class="lab-pill">Vital Capacity</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lab 3: Biochemistry -->
+          <div class="lab-card reveal-on-scroll">
+            <div class="lab-image-box">
+              <img src="assets/images/pathology-lab.webp" alt="Biochemistry and Diagnostic Lab">
+              <span class="lab-tag">Pre-Clinical</span>
+            </div>
+            <div class="lab-content">
+              <h3 class="lab-title">Biochemistry Laboratory</h3>
+              <p class="lab-desc">Spectrophotometers, electrophoresis systems, chromatography columns, and automated clinical chemistry testing benches.</p>
+              <div class="lab-features-list">
+                <span class="lab-pill">Clinical Chemistry</span>
+                <span class="lab-pill">Electrophoresis</span>
+                <span class="lab-pill">Enzymatic Assays</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lab 4: Pathology -->
+          <div class="lab-card reveal-on-scroll">
+            <div class="lab-image-box">
+              <img src="assets/images/pathology-lab.webp" alt="Pathology Laboratory Diagnostics">
+              <span class="lab-tag">Para-Clinical</span>
+            </div>
+            <div class="lab-content">
+              <h3 class="lab-title">Pathology Laboratory</h3>
+              <p class="lab-desc">Histopathological processing units, binocular research microscopes, cryostats, and gross pathology museum specimens.</p>
+              <div class="lab-features-list">
+                <span class="lab-pill">Histopathology</span>
+                <span class="lab-pill">Cytology</span>
+                <span class="lab-pill">Blood Banking Study</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lab 5: Microbiology -->
+          <div class="lab-card reveal-on-scroll">
+            <div class="lab-image-box">
+              <img src="assets/images/microbiology-lab.webp" alt="Medical Microbiology Laboratory">
+              <span class="lab-tag">Para-Clinical</span>
+            </div>
+            <div class="lab-content">
+              <h3 class="lab-title">Microbiology Laboratory</h3>
+              <p class="lab-desc">Biosafety laminar flow hoods, bacteriological incubators, autoclave units, and serological investigation facilities.</p>
+              <div class="lab-features-list">
+                <span class="lab-pill">Culture & Sensitivity</span>
+                <span class="lab-pill">Immunology</span>
+                <span class="lab-pill">Mycology</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lab 6: Medical Research -->
+          <div class="lab-card reveal-on-scroll">
+            <div class="lab-image-box">
+              <img src="assets/images/medical-research.webp" alt="Advanced Medical Research Laboratory">
+              <span class="lab-tag">Research & Inquiry</span>
+            </div>
+            <div class="lab-content">
+              <h3 class="lab-title">Medical Research Laboratory</h3>
+              <p class="lab-desc">Dedicated multidisciplinary research facility for faculty investigations, medical epidemiology, and student scientific projects.</p>
+              <div class="lab-features-list">
+                <span class="lab-pill">PCR Thermocyclers</span>
+                <span class="lab-pill">Data Analytics</span>
+                <span class="lab-pill">Scientific Publishing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 12: Clinical Training & Practical Learning -->
+    <section class="section section-mint">
+      <div class="container">
+        <div class="clinical-grid">
+          <div class="clinical-content-col reveal-on-scroll">
+            <span class="section-badge">CLINICAL EDUCATION CONCEPTS</span>
+            <h2 class="section-title">Connecting Medical Knowledge With Clinical Learning</h2>
+            <p class="section-desc">Clinical exposure trains medical students to transition from foundational textbook theory to systematic patient bedside interaction, differential diagnosis, and ethical healthcare delivery.</p>
+
+            <div class="clinical-concepts-list">
+              <div class="clinical-concept-card">
+                <span class="concept-num">01</span>
+                <div>
+                  <h4 class="concept-title">Clinical Observation</h4>
+                  <p class="concept-desc">Observing experienced clinicians perform clinical history taking, systematic physical examination, and diagnostic formulation.</p>
+                </div>
+              </div>
+
+              <div class="clinical-concept-card">
+                <span class="concept-num">02</span>
+                <div>
+                  <h4 class="concept-title">Case-Based Learning</h4>
+                  <p class="concept-desc">Interactive clinical case conferences dissecting real-world diagnostic challenges, pathophysiology, and treatment options.</p>
+                </div>
+              </div>
+
+              <div class="clinical-concept-card">
+                <span class="concept-num">03</span>
+                <div>
+                  <h4 class="concept-title">Patient Communication & Medical Ethics</h4>
+                  <p class="concept-desc">Developing compassionate bedside manner, respectful informed consent procedures, and confidentiality compliance.</p>
+                </div>
+              </div>
+
+              <div class="clinical-concept-card">
+                <span class="concept-num">04</span>
+                <div>
+                  <h4 class="concept-title">Supervised Practical Learning</h4>
+                  <p class="concept-desc">Step-by-step hands-on clinical procedures under continuous faculty oversight in compliance with medical safety standards.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-disclaimer-box" style="margin-top: 1.5rem; max-width: 100%;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <div>
+                <div class="timeline-disclaimer-title">Educational Concept Note</div>
+                <p class="timeline-disclaimer-text">This section provides an illustrative representation of medical educational methodology. This website does not claim that a real teaching hospital, clinical department, patient-care facility, or hospital affiliation exists.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="clinical-image-wrap reveal-on-scroll">
+            <img src="assets/images/clinical-learning.webp" alt="Demonstration Medical Clinical Learning Setting">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 13: Admission Process -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">ADMISSION PROCESS</span>
+          <h2 class="section-title">Your Journey Towards Medical Education Starts Here</h2>
+          <p class="section-desc">An overview of standard procedural phases involved in Indian medical education admissions from entrance qualifications to seat allocation.</p>
+        </div>
+
+        <div class="admission-timeline reveal-on-scroll">
+          <!-- Step 01 -->
+          <div class="timeline-step">
+            <div class="step-indicator">01</div>
+            <div class="step-content">
+              <h3 class="step-title">Step 01: Review Eligibility</h3>
+              <p class="step-desc">Aspiring candidates review mandatory academic qualifications (10+2 with Physics, Chemistry, Biology/Biotechnology and English) and age criteria as per governing regulations.</p>
+              <div class="step-highlights">
+                <span class="step-highlight-chip">10+2 Science Stream</span>
+                <span class="step-highlight-chip">PCB Minimum Qualifying Marks</span>
+                <span class="step-highlight-chip">Regulatory Age Norms</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="timeline-step">
+            <div class="step-indicator">02</div>
+            <div class="step-content">
+              <h3 class="step-title">Step 02: Entrance Examination</h3>
+              <p class="step-desc">Candidates appear for the mandatory national entrance examination (NEET-UG for undergraduate MBBS; NEET-PG for postgraduate MD/MS admissions).</p>
+              <div class="step-highlights">
+                <span class="step-highlight-chip">National Eligibility cum Entrance Test</span>
+                <span class="step-highlight-chip">Admit Card & Exam Scorecard</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="timeline-step">
+            <div class="step-indicator">03</div>
+            <div class="step-content">
+              <h3 class="step-title">Step 03: Counselling and Seat Allocation</h3>
+              <p class="step-desc">Qualified candidates register for centralized counselling conducted by designated state and central counselling authorities based on entrance merit rank.</p>
+              <div class="step-highlights">
+                <span class="step-highlight-chip">Central & State Counselling</span>
+                <span class="step-highlight-chip">Merit Rank Choice Filling</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="timeline-step">
+            <div class="step-indicator">04</div>
+            <div class="step-content">
+              <h3 class="step-title">Step 04: Document Verification</h3>
+              <p class="step-desc">Alloted candidates present original educational credentials, scorecards, category certificates, identity proofs, and medical fitness certificates for statutory verification.</p>
+              <div class="step-highlights">
+                <span class="step-highlight-chip">Original Marksheets</span>
+                <span class="step-highlight-chip">NEET Rank Card</span>
+                <span class="step-highlight-chip">Medical Fitness</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 05 -->
+          <div class="timeline-step">
+            <div class="step-indicator">05</div>
+            <div class="step-content">
+              <h3 class="step-title">Step 05: Admission Confirmation</h3>
+              <p class="step-desc">Completion of institutional formalities, tuition fee remittance as approved by regulatory authorities, orientation schedule receipt, and commencement of academic classes.</p>
+              <div class="step-highlights">
+                <span class="step-highlight-chip">Formal Enrollment</span>
+                <span class="step-highlight-chip">Academic Orientation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-disclaimer-box reveal-on-scroll">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <div>
+            <div class="timeline-disclaimer-title">Important Regulatory Disclaimer</div>
+            <p class="timeline-disclaimer-text">Medical admission procedures, eligibility, entrance examination requirements, counselling, seat allocation, and applicable regulations depend strictly on current official rules and relevant statutory authorities. This website is a generic demonstration and does not guarantee admission or grant institutional seats.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="admissions.html" class="btn btn-primary btn-lg">Explore Admission Information</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 15: Faculty Section -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">ACADEMIC MENTORS</span>
+          <h2 class="section-title">Learn From Medical Academic Mentors</h2>
+          <p class="section-desc">Sample demonstration faculty profiles reflecting academic leadership and mentorship across preclinical and clinical disciplines.</p>
+          <div class="demo-disclaimer-pill">Fictional Demonstration Profiles – Sample Content</div>
+        </div>
+
+        <div class="faculty-grid">
+          <!-- Faculty 01 -->
+          <div class="faculty-card reveal-on-scroll">
+            <div class="faculty-avatar-box">
+              <img src="assets/images/faculty-01.webp" alt="Faculty Member 01" class="faculty-photo" onerror="this.style.display='none'">
+              <div class="faculty-avatar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <span class="faculty-generic-badge">Sample Demo Profile</span>
+            </div>
+            <div class="faculty-content">
+              <h3 class="faculty-name">Faculty Member 01</h3>
+              <div class="faculty-designation">Professor & Head of Department</div>
+              <span class="faculty-dept-badge">Department of Anatomy</span>
+              <p class="faculty-bio">Specializing in gross human anatomy, clinical embryology, and neuroanatomy education. Actively mentors undergraduate students through anatomical dissections.</p>
+              <div class="faculty-card-footer">
+                Fictional Demonstration Profile
+              </div>
+            </div>
+          </div>
+
+          <!-- Faculty 02 -->
+          <div class="faculty-card reveal-on-scroll">
+            <div class="faculty-avatar-box">
+              <img src="assets/images/faculty-02.webp" alt="Faculty Member 02" class="faculty-photo" onerror="this.style.display='none'">
+              <div class="faculty-avatar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <span class="faculty-generic-badge">Sample Demo Profile</span>
+            </div>
+            <div class="faculty-content">
+              <h3 class="faculty-name">Faculty Member 02</h3>
+              <div class="faculty-designation">Associate Professor</div>
+              <span class="faculty-dept-badge">Department of Physiology</span>
+              <p class="faculty-bio">Focuses on cardiovascular dynamics, clinical autonomic testing, and respiratory physiology. Integrates interactive digital simulation into student laboratory courses.</p>
+              <div class="faculty-card-footer">
+                Fictional Demonstration Profile
+              </div>
+            </div>
+          </div>
+
+          <!-- Faculty 03 -->
+          <div class="faculty-card reveal-on-scroll">
+            <div class="faculty-avatar-box">
+              <img src="assets/images/faculty-03.webp" alt="Faculty Member 03" class="faculty-photo" onerror="this.style.display='none'">
+              <div class="faculty-avatar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <span class="faculty-generic-badge">Sample Demo Profile</span>
+            </div>
+            <div class="faculty-content">
+              <h3 class="faculty-name">Faculty Member 03</h3>
+              <div class="faculty-designation">Professor</div>
+              <span class="faculty-dept-badge">Department of General Medicine</span>
+              <p class="faculty-bio">Passionate educator in clinical diagnostics, infectious disease protocols, and bedside patient ethics. Guides postgraduates through case seminars.</p>
+              <div class="faculty-card-footer">
+                Fictional Demonstration Profile
+              </div>
+            </div>
+          </div>
+
+          <!-- Faculty 04 -->
+          <div class="faculty-card reveal-on-scroll">
+            <div class="faculty-avatar-box">
+              <img src="assets/images/faculty-04.webp" alt="Faculty Member 04" class="faculty-photo" onerror="this.style.display='none'">
+              <div class="faculty-avatar-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <span class="faculty-generic-badge">Sample Demo Profile</span>
+            </div>
+            <div class="faculty-content">
+              <h3 class="faculty-name">Faculty Member 04</h3>
+              <div class="faculty-designation">Associate Professor</div>
+              <span class="faculty-dept-badge">Department of Pathology</span>
+              <p class="faculty-bio">Expertise in oncopathology, histochemical techniques, and hematological investigations. Mentors learners on laboratory quality control and slide diagnosis.</p>
+              <div class="faculty-card-footer">
+                Fictional Demonstration Profile
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="faculty.html" class="btn btn-secondary">Explore Academic Faculty Mentors</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 17: Campus Facilities -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">CAMPUS ENVIRONMENT</span>
+          <h2 class="section-title">Explore the Academic Environment</h2>
+          <p class="section-desc">A purpose-built campus architecture designed to support intensive medical learning, scientific inquiry, and student well-being.</p>
+          <div class="demo-disclaimer-pill">Illustrative Demonstration Facilities – Conceptual Visuals</div>
+        </div>
+
+        <div class="facilities-grid">
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/medical-classroom.webp" alt="Modern Academic Classrooms">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Modern Academic Classrooms</h3>
+              <p class="facility-desc">Tiered lecture halls equipped with acoustic design, digital multimedia projectors, and smart interactive boards.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/anatomy-lab.webp" alt="Medical Practical Laboratories">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Medical Laboratories</h3>
+              <p class="facility-desc">Specialized teaching labs for histology, physiology, biochemistry, pathology, and microbiology experiments.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/library.webp" alt="Central Medical Science Library">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Central Library</h3>
+              <p class="facility-desc">Extensive medical reference collection, international medical journals, silent reading halls, and digital catalogue access.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/seminar-hall.webp" alt="Seminar Auditorium">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Seminar Auditorium</h3>
+              <p class="facility-desc">Spacious auditorium with central cooling and stage projection for medical colloquiums and conferences.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/campus-gallery-03.webp" alt="Student Study Areas">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Student Study Areas</h3>
+              <p class="facility-desc">Quiet group discussion spaces and individual study cubicles equipped with Wi-Fi connectivity and charging points.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/student-life.webp" alt="Campus Hostel Facilities">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Hostel Facilities</h3>
+              <p class="facility-desc">Safe, hygienic residential accommodations with study desks, nutritious dining mess, and 24/7 security surveillance.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/campus-gallery-04.webp" alt="Sports and Recreation">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Sports and Recreation</h3>
+              <p class="facility-desc">Outdoor sports grounds, badminton courts, indoor games lounge, and gymnasium promoting holistic fitness.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal-on-scroll">
+            <div class="facility-img-wrap">
+              <img src="assets/images/about-campus.webp" alt="Student Common Areas">
+            </div>
+            <div class="facility-content">
+              <h3 class="facility-title">Student Common Areas</h3>
+              <p class="facility-desc">Landscaped green open spaces, campus cafeteria, and relaxation courtyards for peer engagement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 18: Campus Life Image Gallery with Lightbox -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">CAMPUS LIFE</span>
+          <h2 class="section-title">Experience Learning Beyond the Classroom</h2>
+          <p class="section-desc">Medical education extends beyond textbooks into student mentorship, academic symposia, community health camps, and cultural bonding.</p>
+        </div>
+
+        <div class="gallery-filter-bar reveal-on-scroll">
+          <button class="gallery-filter-btn active" data-filter="all">All Moments</button>
+          <button class="gallery-filter-btn" data-filter="academic">Academic & Study</button>
+          <button class="gallery-filter-btn" data-filter="events">Seminars & Events</button>
+          <button class="gallery-filter-btn" data-filter="campus">Campus Grounds</button>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item reveal-on-scroll" data-category="academic">
+            <img src="assets/images/campus-gallery-01.webp" alt="Medical Student Practical Discussions">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Academic Discussions</span>
+              <h4 class="gallery-item-title">Collaborative Clinical Case Study</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-on-scroll" data-category="events">
+            <img src="assets/images/campus-gallery-02.webp" alt="Academic Medical Symposium Presentation">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Academic Seminars</span>
+              <h4 class="gallery-item-title">Annual Medical Science Symposium</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-on-scroll" data-category="academic">
+            <img src="assets/images/campus-gallery-03.webp" alt="Central Medical Reading Commons">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Library & Study</span>
+              <h4 class="gallery-item-title">Quiet Study Commons</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal-on-scroll" data-category="campus">
+            <img src="assets/images/campus-gallery-04.webp" alt="Student Sports and Wellness Grounds">
+            <div class="gallery-item-overlay">
+              <span class="gallery-item-category">Recreation</span>
+              <h4 class="gallery-item-title">Campus Sports & Recreation</h4>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="campus-life.html" class="btn btn-secondary">Discover More Campus Life Moments</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 19: Student Testimonials -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">STUDENT VOICES</span>
+          <h2 class="section-title">Student Learning Experiences</h2>
+          <p class="section-desc">Sample demonstration perspectives illustrating student experiences in modern medical pedagogy.</p>
+          <div class="demo-disclaimer-pill">Sample Testimonials – Demonstration Content</div>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal-on-scroll">
+            <div class="testimonial-quote-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            </div>
+            <p class="testimonial-text">"The structured preclinical curriculum provided deep clarity in anatomy and physiology. Practical lab sessions alongside mentor discussions made learning comprehensive and memorable."</p>
+            <div class="testimonial-author-wrap">
+              <div class="author-avatar">01</div>
+              <div>
+                <div class="author-name">Medical Student 01</div>
+                <div class="author-program">MBBS Cohort – Demonstration Profile</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal-on-scroll">
+            <div class="testimonial-quote-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            </div>
+            <p class="testimonial-text">"Access to well-equipped diagnostic pathology and microbiology labs allowed us to gain true scientific confidence. Faculty guidance throughout clinical observation has been outstanding."</p>
+            <div class="testimonial-author-wrap">
+              <div class="author-avatar">02</div>
+              <div>
+                <div class="author-name">Medical Student 02</div>
+                <div class="author-program">MBBS Cohort – Demonstration Profile</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal-on-scroll">
+            <div class="testimonial-quote-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+            </div>
+            <p class="testimonial-text">"The emphasis on medical ethics, clinical communication, and continuous scientific seminars shaped not only my medical knowledge but also my sense of responsibility toward patient care."</p>
+            <div class="testimonial-author-wrap">
+              <div class="author-avatar">03</div>
+              <div>
+                <div class="author-name">Medical Student 03</div>
+                <div class="author-program">Postgraduate Resident – Demonstration Profile</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 20: Events & Academic Activities -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">ACADEMIC CALENDAR</span>
+          <h2 class="section-title">Knowledge. Discovery. Healthcare Innovation.</h2>
+          <p class="section-desc">Sample schedule of symposia, medical seminars, and scientific activities designed to foster intellectual growth.</p>
+          <div class="demo-disclaimer-pill">Illustrative Demonstration Events</div>
+        </div>
+
+        <div class="events-grid">
+          <div class="event-card reveal-on-scroll">
+            <div class="event-img-wrap">
+              <img src="assets/images/seminar-hall.webp" alt="Medical Science Symposium Event">
+              <div class="event-date-badge">
+                <span class="event-date-month">Nov</span>
+                <span class="event-date-day">18</span>
+              </div>
+            </div>
+            <div class="event-content">
+              <h3 class="event-title">Medical Science Symposium</h3>
+              <p class="event-desc">Annual scientific gathering exploring advancements in pre-clinical pedagogy and evidence-based diagnostic approaches.</p>
+              <div class="event-card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-teal); font-weight: 600;">Main Auditorium</span>
+                <a href="campus-life.html" class="btn btn-secondary btn-sm">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card reveal-on-scroll">
+            <div class="event-img-wrap">
+              <img src="assets/images/clinical-learning.webp" alt="Healthcare Awareness Workshop">
+              <div class="event-date-badge">
+                <span class="event-date-month">Dec</span>
+                <span class="event-date-day">05</span>
+              </div>
+            </div>
+            <div class="event-content">
+              <h3 class="event-title">Healthcare Awareness Workshop</h3>
+              <p class="event-desc">Community health orientation addressing preventive medicine, immunization strategies, and rural outreach protocols.</p>
+              <div class="event-card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-teal); font-weight: 600;">Hall B</span>
+                <a href="campus-life.html" class="btn btn-secondary btn-sm">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card reveal-on-scroll">
+            <div class="event-img-wrap">
+              <img src="assets/images/medical-research.webp" alt="Scientific Research Seminar">
+              <div class="event-date-badge">
+                <span class="event-date-month">Jan</span>
+                <span class="event-date-day">14</span>
+              </div>
+            </div>
+            <div class="event-content">
+              <h3 class="event-title">Scientific Research Seminar</h3>
+              <p class="event-desc">Focus session dedicated to research methodology, biostatistics in medicine, and peer-reviewed publishing standards.</p>
+              <div class="event-card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-teal); font-weight: 600;">Research Wing</span>
+                <a href="campus-life.html" class="btn btn-secondary btn-sm">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="event-card reveal-on-scroll">
+            <div class="event-img-wrap">
+              <img src="assets/images/medical-classroom.webp" alt="Medical Education Conference">
+              <div class="event-date-badge">
+                <span class="event-date-month">Feb</span>
+                <span class="event-date-day">22</span>
+              </div>
+            </div>
+            <div class="event-content">
+              <h3 class="event-title">Medical Education Conference</h3>
+              <p class="event-desc">Faculty and student panel discussions exploring emerging technologies and simulation models in clinical training.</p>
+              <div class="event-card-footer">
+                <span style="font-size: 0.8rem; color: var(--color-teal); font-weight: 600;">Central Hall</span>
+                <a href="campus-life.html" class="btn btn-secondary btn-sm">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 21: FAQ Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">FREQUENTLY ASKED QUESTIONS</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-desc">Educational guidance for Indian medical aspirants, prospective students, and parents regarding medical college academics and procedures.</p>
+        </div>
+
+        <div class="faq-accordion-wrap reveal-on-scroll">
+          <!-- Question 1 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>What is an MBBS program?</span>
+              <span class="faq-icon-indicator">&#9662;</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                The Bachelor of Medicine and Bachelor of Surgery (MBBS) is the primary undergraduate medical degree awarded to graduates in India. It prepares students with comprehensive theoretical knowledge, laboratory skills, and supervised clinical training across medical, surgical, and diagnostic disciplines.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>What are the general eligibility requirements for MBBS in India?</span>
+              <span class="faq-icon-indicator">&#9662;</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                General requirements typically include passing 10+2 or equivalent higher secondary examination with Physics, Chemistry, Biology/Biotechnology, and English as core subjects, obtaining the minimum qualifying aggregate marks as prescribed by statutory authorities, and meeting the applicable age criteria. Candidates must also qualify for the designated national entrance examination.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>Is NEET required for MBBS admission?</span>
+              <span class="faq-icon-indicator">&#9662;</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Yes. Under prevailing Indian regulations, qualifying in the National Eligibility cum Entrance Test (NEET-UG) conducted by designated testing authorities is the mandatory single entrance gateway for admission to undergraduate medical programs across all recognized institutions in India.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>What is the duration of an MBBS program?</span>
+              <span class="faq-icon-indicator">&#9662;</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                An MBBS curriculum in India spans 4.5 academic years divided into Pre-Clinical, Para-Clinical, and Clinical professional phases, followed by a mandatory 1-year Compulsory Rotating Medical Internship (CRMI), bringing the total duration to 5.5 years.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>What postgraduate medical pathways are available?</span>
+              <span class="faq-icon-indicator">&#9662;</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                After completing MBBS and the mandatory internship, doctors can pursue postgraduate degrees such as Doctor of Medicine (MD) in non-surgical specialties (e.g., General Medicine, Paediatrics, Pathology) or Master of Surgery (MS) in surgical disciplines (e.g., General Surgery, Orthopaedics, Ophthalmology) through designated national postgraduate examinations.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 6 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>What subjects are covered during medical education?</span>
+              <span class="faq-icon-indicator">&#9662;</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                The curriculum encompasses Pre-Clinical subjects (Human Anatomy, Physiology, Biochemistry), Para-Clinical subjects (Pathology, Pharmacology, Microbiology, Forensic Medicine, Community Medicine), and Clinical disciplines (General Medicine, General Surgery, Obstetrics & Gynaecology, Paediatrics, Orthopaedics, Ophthalmology, ENT, Dermatology, Psychiatry).
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 7 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>What is clinical training?</span>
+              <span class="faq-icon-indicator">&#9662;</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Clinical training is supervised practical education where medical students participate in patient history taking, physical examination demonstrations, ward rounds, case discussions, diagnostic evaluations, and procedural observation under the mentorship of senior physicians and surgeons.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 8 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>What career opportunities are available after medical education?</span>
+              <span class="faq-icon-indicator">&#9662;</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Graduates can practice clinical medicine as medical officers, pursue postgraduate super-specializations (DM/MCh), engage in medical research and public health initiatives, teach in medical academia, or contribute to healthcare administration and policy development.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 9 -->
+          <div class="faq-item">
+            <button class="faq-question-btn" type="button">
+              <span>How can students apply for admission?</span>
+              <span class="faq-icon-indicator">&#9662;</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-inner">
+                Students apply by qualifying in NEET, registering for centralized state or national counselling sessions conducted by authorized government counselling committees, selecting preferred choices based on merit, and completing formal document verification at the allotted institution.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 22: Admission Enquiry Form -->
+    <section class="section section-mint" id="enquirySection">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">ADMISSION ENQUIRY</span>
+          <h2 class="section-title">Begin Your Journey in Medical Education</h2>
+          <p class="section-desc">Interested in pursuing medical education? Share your details to explore general admission information and academic program details.</p>
+        </div>
+
+        <div class="enquiry-form-card reveal-on-scroll">
+          <div class="form-disclaimer-notice">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            <span><strong>Notice:</strong> This is a demonstration form for website evaluation only. Your information is processed purely in the browser and is not transmitted, stored, or saved.</span>
+          </div>
+
+          <form id="admissionEnquiryForm" novalidate>
+            <div class="form-grid">
+              <!-- Full Name -->
+              <div>
+                <label for="fullName" class="form-label">Full Name <span class="required-star">*</span></label>
+                <input type="text" id="fullName" class="form-input" placeholder="e.g. Rahul Sharma" required>
+                <div class="field-error-msg" id="nameError">Please enter your full name.</div>
+              </div>
+
+              <!-- Mobile Number -->
+              <div>
+                <label for="mobileNumber" class="form-label">Mobile Number <span class="required-star">*</span></label>
+                <input type="tel" id="mobileNumber" class="form-input" placeholder="e.g. 9876543210" maxlength="10" required>
+                <div class="form-helper-text">10-digit Indian mobile number</div>
+                <div class="field-error-msg" id="mobileError">Please enter a valid 10-digit Indian mobile number.</div>
+              </div>
+
+              <!-- Email Address -->
+              <div>
+                <label for="emailAddress" class="form-label">Email Address <span class="required-star">*</span></label>
+                <input type="email" id="emailAddress" class="form-input" placeholder="e.g. student@example.com" required>
+                <div class="field-error-msg" id="emailError">Please enter a valid email address.</div>
+              </div>
+
+              <!-- City -->
+              <div>
+                <label for="city" class="form-label">City <span class="required-star">*</span></label>
+                <input type="text" id="city" class="form-input" placeholder="e.g. Hyderabad" required>
+                <div class="field-error-msg" id="cityError">Please enter your current city.</div>
+              </div>
+
+              <!-- Academic Qualification -->
+              <div>
+                <label for="academicQualification" class="form-label">Academic Qualification <span class="required-star">*</span></label>
+                <select id="academicQualification" class="form-select" required>
+                  <option value="">Select Current Qualification</option>
+                  <option value="12th Appearing">10+2 / Higher Secondary (Appearing)</option>
+                  <option value="12th Completed">10+2 / Higher Secondary (Completed)</option>
+                  <option value="MBBS Student">MBBS Student (Undergraduate)</option>
+                  <option value="MBBS Completed">MBBS Graduate (Doctor)</option>
+                  <option value="Other">Other Science Qualification</option>
+                </select>
+                <div class="field-error-msg" id="qualificationError">Please select your academic qualification.</div>
+              </div>
+
+              <!-- Preferred Program -->
+              <div>
+                <label for="preferredProgram" class="form-label">Preferred Program <span class="required-star">*</span></label>
+                <select id="preferredProgram" class="form-select" required>
+                  <option value="">Select Preferred Program</option>
+                  <option value="MBBS">MBBS (Undergraduate Medical)</option>
+                  <option value="MD">MD (Doctor of Medicine)</option>
+                  <option value="MS">MS (Master of Surgery)</option>
+                  <option value="General Admission Enquiry">General Admission Enquiry</option>
+                </select>
+                <div class="field-error-msg" id="programError">Please select a preferred program.</div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group-full">
+                <label for="enquiryMessage" class="form-label">Enquiry Message / Questions (Optional)</label>
+                <textarea id="enquiryMessage" class="form-textarea" rows="4" placeholder="Briefly describe your academic background or specific queries regarding curriculum, eligibility, or entrance guidance..."></textarea>
+              </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 1rem;">
+              <button type="submit" class="btn btn-primary btn-lg">Submit Admission Enquiry</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 23: Contact Information Overview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-badge">GET IN TOUCH</span>
+          <h2 class="section-title">Contact Information</h2>
+          <p class="section-desc">Sample institutional administrative contact details and working office hours.</p>
+          <div class="demo-disclaimer-pill">Dummy Demonstration Contact Details</div>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-cards-stack reveal-on-scroll">
+            <div class="contact-info-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h4 class="contact-card-title">Telephone Numbers</h4>
+                <p class="contact-card-text">Primary Phone: 0000000000</p>
+                <p class="contact-card-text">Alternative Phone: 0000000000</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h4 class="contact-card-title">Official Email</h4>
+                <p class="contact-card-text"><a href="mailto:demo@example.com">demo@example.com</a></p>
+                <p class="contact-card-text" style="font-size: 0.8rem; color: var(--color-muted-text);">Demo Inquiries & Curriculum Guidance</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4 class="contact-card-title">Administrative Address</h4>
+                <p class="contact-card-text">Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000.</p>
+              </div>
+            </div>
+
+            <div class="contact-info-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div>
+                <h4 class="contact-card-title">Working Hours</h4>
+                <p class="contact-card-text">Monday – Saturday, 9:00 AM – 5:00 PM</p>
+                <p class="contact-card-text" style="font-size: 0.8rem; color: var(--color-muted-text);">Administrative Offices Closed on Public Holidays</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CSS-based Location Illustration -->
+          <div class="css-map-container reveal-on-scroll">
+            <div class="css-map-content">
+              <div class="map-pin-pulse">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <h3 style="color: #fff; margin-bottom: 0.5rem;">Demonstration Campus Location</h3>
+              <p style="color: rgba(255,255,255,0.8); font-size: 0.95rem; margin-bottom: 1.5rem;">Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000</p>
+              <div style="background: rgba(255,255,255,0.08); border-radius: var(--radius-md); padding: 1.25rem; font-size: 0.82rem; color: rgba(255,255,255,0.7);">
+                <p style="margin: 0;">Notice: This is a CSS-based schematic illustration for demonstration purposes. No real GPS map or institutional address is connected.</p>
+              </div>
+              <div style="margin-top: 1.5rem;">
+                <a href="contact.html" class="btn btn-outline-white btn-sm">View Full Contact Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Section 24: Footer Design -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand & Info -->
+        <div>
+          <div class="footer-brand-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              <path d="M12 17v4M10 19h4" stroke-width="2"/>
+            </svg>
+            MEDICAL COLLEGE WEBSITE
+          </div>
+          <p class="footer-about-text">A modern, demonstration website showcasing educational structures, MBBS curriculums, medical departments, and facilities for Indian medical education institutions.</p>
+          <div class="footer-social-links">
+            <div class="social-icon-btn" title="Decorative Icon" aria-label="Social Link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </div>
+            <div class="social-icon-btn" title="Decorative Icon" aria-label="Social Link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <div class="social-icon-btn" title="Decorative Icon" aria-label="Social Link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Academic Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academic Programs</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Institutional Links -->
+        <div>
+          <h4 class="footer-col-title">Institution</h4>
+          <ul class="footer-nav-list">
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="campus-life.html">Campus Life</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Details -->
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Phone: 0000000000</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email: demo@example.com</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Address: Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom & Legal Disclaimers -->
+      <div class="footer-bottom">
+        <div class="footer-legal-disclaimer">
+          <strong>Disclaimer:</strong> This is a fictional educational website demonstration. All institutional details, academic programs, faculty profiles, statistics, student testimonials, medical facilities, research information, and events are illustrative and do not represent an actual medical institution.
+        </div>
+        <div class="footer-copy-row">
+          <div>&copy; 2026 Medical College Website. Demo Website – All Rights Reserved.</div>
+          <div>Compatible with Hostinger Static Website Hosting | Vanilla HTML5, CSS3 & JavaScript</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close image modal">&times;</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Demo Form Success Modal -->
+  <div class="alert-success-modal" id="successModal">
+    <div class="success-modal-card">
+      <div class="success-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+      </div>
+      <h3 class="success-title">Admission Enquiry Submitted</h3>
+      <p class="success-desc">Thank you for your interest! This is a frontend demonstration website. Your details have been validated successfully in the browser. In an active deployment, this form links to the institutional admissions team.</p>
+      <div class="demo-disclaimer-pill" style="margin-bottom: 1.5rem;">Demo form only. Your information is not transmitted or stored.</div>
+      <button class="btn btn-primary btn-sm" id="closeSuccessModalBtn" style="width: 100%;">Close Notification</button>
+    </div>
+  </div>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

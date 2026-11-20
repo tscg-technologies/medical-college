@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Programs | Medical College Website Demo</title>
+  <meta name="description" content="Explore MBBS undergraduate curriculum, MD postgraduate specializations, and MS surgical disciplines structured around Indian medical education standards.">
+  <meta name="robots" content="index, follow">
+  
+  <meta property="og:title" content="Academic Programs | Medical College Website Demo">
+  <meta property="og:description" content="Explore foundational medical curricula, CBME frameworks, clinical rotations, and postgraduate training.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/medical-classroom.webp">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="demo-top-bar">
+    <div class="top-bar-inner">
+      <div class="top-bar-left">
+        <span class="top-bar-badge">Demonstration Website</span>
+        <span>Generic Indian Medical Education Curriculum & Institution Concept Demo</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:0000000000" class="top-bar-link">Demo Helpline: 0000000000</a>
+        <a href="mailto:demo@example.com" class="top-bar-link">demo@example.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="Medical College Website Home">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+            <path d="M12 17v4M10 19h4" stroke-width="2.2"/>
+          </svg>
+        </div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">MEDICAL COLLEGE</span>
+          <span class="brand-subtitle">Excellence in Medical Education</span>
+        </div>
+      </a>
+
+            <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+
+          <!-- Academics Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="academics.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Academics
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="academics.html" class="dropdown-link">Academic Programs</a></li>
+              <li><a href="departments.html" class="dropdown-link">Medical Departments</a></li>
+              <li><a href="research.html" class="dropdown-link">Research & Innovation</a></li>
+            </ul>
+          </li>
+
+          <!-- Campus Dropdown -->
+          <li class="nav-item-dropdown">
+            <a href="about.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Our Campus
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html" class="dropdown-link">About Our College</a></li>
+              <li><a href="faculty.html" class="dropdown-link">Faculty Mentors</a></li>
+              <li><a href="campus-life.html" class="dropdown-link">Campus Life & Facilities</a></li>
+            </ul>
+          </li>
+
+          <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="index.html#enquirySection" class="portal-demo-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a8.38 8.38 0 0 1 13 0"/></svg>
+          Student Portal
+        </a>
+        <a href="admissions.html" class="btn btn-primary btn-sm">Apply Now</a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-text-wrap">
+        <span class="brand-title">MEDICAL COLLEGE</span>
+        <span class="brand-subtitle">Navigation</span>
+      </div>
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="academics.html" class="nav-link active">Academics</a></li>
+      <li><a href="departments.html" class="nav-link">Departments</a></li>
+      <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+      <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+      <li><a href="research.html" class="nav-link">Research</a></li>
+      <li><a href="campus-life.html" class="nav-link">Campus Life</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-cta">
+      <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+      <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner reveal-on-scroll">
+          <div class="breadcrumb-nav">
+            <a href="index.html">Home</a>
+            <span class="breadcrumb-separator">/</span>
+            <span>Academic Programs</span>
+          </div>
+          <span class="section-badge">CURRICULUM ARCHITECTURE</span>
+          <h1 class="page-hero-title">Explore Our Medical Academic Programs</h1>
+          <p class="page-hero-desc">Discover undergraduate MBBS curriculum structures, postgraduate medical MD pathways, and MS surgical specializations grounded in clinical competence and scientific inquiry.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program 1: MBBS Deep Dive -->
+    <section class="section" id="mbbs">
+      <div class="container">
+        <div class="section-header text-left reveal-on-scroll">
+          <span class="section-badge">UNDERGRADUATE MEDICAL EDUCATION</span>
+          <h2 class="section-title">Bachelor of Medicine & Bachelor of Surgery (MBBS)</h2>
+          <p class="section-desc">An undergraduate medical education program designed to provide foundational medical knowledge, scientific understanding, and clinical learning.</p>
+        </div>
+
+        <div class="about-grid" style="margin-bottom: 3rem;">
+          <div class="about-content-column reveal-on-scroll">
+            <h3 style="margin-bottom: 1rem; color: var(--color-navy);">Curricular Framework & Duration</h3>
+            <p style="margin-bottom: 1rem;">The MBBS curriculum spans a standard total of 5.5 years, encompassing 4.5 academic years of phased modular instruction followed by 1 full calendar year of Compulsory Rotating Medical Internship (CRMI).</p>
+            <p style="margin-bottom: 1.5rem;">The curriculum follows the Competency-Based Medical Education (CBME) system, which emphasizes integrated vertical and horizontal learning, early clinical exposure (ECE), self-directed study, and attitude, ethics, and communication (AETCOM) training.</p>
+
+            <div class="about-values-grid" style="margin: 0 0 1.5rem 0;">
+              <div class="value-card">
+                <h4 class="value-card-title">Academic Duration</h4>
+                <p class="value-card-desc">4.5 Academic Years (9 Semesters)</p>
+              </div>
+              <div class="value-card">
+                <h4 class="value-card-title">Internship</h4>
+                <p class="value-card-desc">1 Year Compulsory Rotations (CRMI)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image-column reveal-on-scroll">
+            <div class="about-image-wrapper">
+              <img src="assets/images/medical-classroom.webp" alt="Medical Lecture Theatre and Academic Classroom">
+            </div>
+          </div>
+        </div>
+
+        <!-- MBBS Phases Table -->
+        <div class="eligibility-table-card reveal-on-scroll">
+          <div class="table-card-header">
+            <h3 class="table-card-title">MBBS Curriculum Phase Breakdown</h3>
+            <p class="table-card-subtitle">Illustrative Academic Progression across Indian Preclinical, Paraclinical, and Clinical Phases</p>
+          </div>
+          <table class="eligibility-table">
+            <thead>
+              <tr>
+                <th>Phase</th>
+                <th>Duration</th>
+                <th>Core Disciplines Covered</th>
+                <th>Clinical & Practical Focus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Phase 1: Pre-Clinical</strong></td>
+                <td>1 Year (2 Semesters)</td>
+                <td>Human Anatomy, Physiology, Biochemistry</td>
+                <td>Cadaveric dissection, microscopic histology, physiological experiments, early clinical exposure (ECE).</td>
+              </tr>
+              <tr>
+                <td><strong>Phase 2: Para-Clinical</strong></td>
+                <td>1.5 Years (3 Semesters)</td>
+                <td>Pathology, Microbiology, Pharmacology</td>
+                <td>Histopathological slide diagnosis, bacteriological cultures, pharmacological therapy, clinical ward visits.</td>
+              </tr>
+              <tr>
+                <td><strong>Phase 3 Part 1: Clinical</strong></td>
+                <td>1 Year (2 Semesters)</td>
+                <td>Community Medicine, Forensic Medicine, Ophthalmology, ENT</td>
+                <td>Epidemiological surveys, rural health visits, ocular exams, hearing assessments, medico-legal autopsy observations.</td>
+              </tr>
+              <tr>
+                <td><strong>Phase 3 Part 2: Clinical</strong></td>
+                <td>1 Year (2 Semesters)</td>
+                <td>General Medicine, General Surgery, Ob-Gyn, Paediatrics, Orthopaedics</td>
+                <td>Comprehensive bedside ward rounds, surgical case demonstrations, labour room observation, emergency triage.</td>
+              </tr>
+              <tr>
+                <td><strong>Internship (CRMI)</strong></td>
+                <td>1 Calendar Year</td>
+                <td>Rotational Postings across all Core Specialties</td>
+                <td>Hands-on patient care under supervision, casualty duties, night postings, rural primary health centre (PHC) residency.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program 2: MD Programs -->
+    <section class="section section-alt" id="md">
+      <div class="container">
+        <div class="section-header text-left reveal-on-scroll">
+          <span class="section-badge">POSTGRADUATE MEDICAL SCIENCES</span>
+          <h2 class="section-title">MD Programs (Doctor of Medicine)</h2>
+          <p class="section-desc">Postgraduate medical education pathways across different medical specializations designed for advanced clinical diagnosis and non-operative care.</p>
+        </div>
+
+        <div class="about-grid" style="margin-bottom: 3rem;">
+          <div class="about-image-column reveal-on-scroll">
+            <div class="about-image-wrapper">
+              <img src="assets/images/clinical-learning.webp" alt="Postgraduate Clinical Learning and Residency">
+            </div>
+          </div>
+
+          <div class="about-content-column reveal-on-scroll">
+            <h3 style="margin-bottom: 1rem; color: var(--color-navy);">Postgraduate Residency Training</h3>
+            <p style="margin-bottom: 1rem;">Postgraduate MD programs in India typically span three academic years of rigorous full-time clinical residency. Residents take on progressive clinical responsibilities under faculty mentorship.</p>
+            <p style="margin-bottom: 1.5rem;">Key training facets include inpatient care, specialized outpatient clinics, clinical audit presentation, mortality meetings, journal club discussions, and mandatory submission of a research dissertation (thesis).</p>
+
+            <div class="timeline-disclaimer-box" style="margin: 0; max-width: 100%;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <div>
+                <div class="timeline-disclaimer-title">Specialization Categories</div>
+                <p class="timeline-disclaimer-text">General Medicine, Paediatrics, Dermatology, Anaesthesiology, Radiology, Pathology, Biochemistry, and Community Medicine represent generic illustrative categories.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal-on-scroll">
+            <h4 class="feature-title" style="color: var(--color-teal); font-size: 1.15rem;">MD – General Medicine</h4>
+            <p class="feature-desc">Comprehensive adult medicine, intensive care unit (ICU) management, cardiology, pulmonology, and complex differential diagnosis.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <h4 class="feature-title" style="color: var(--color-teal); font-size: 1.15rem;">MD – Paediatrics</h4>
+            <p class="feature-desc">Neonatal intensive care (NICU), pediatric developmental disorders, childhood infectious diseases, and immunization strategies.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <h4 class="feature-title" style="color: var(--color-teal); font-size: 1.15rem;">MD – Dermatology</h4>
+            <p class="feature-desc">Clinical dermatology, cutaneous manifestations of systemic disease, venereology, and dermatological diagnostic techniques.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <h4 class="feature-title" style="color: var(--color-teal); font-size: 1.15rem;">MD – Anaesthesiology</h4>
+            <p class="feature-desc">General anaesthesia, regional nerve blocks, acute pain management, surgical perioperative monitoring, and critical resuscitation.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <h4 class="feature-title" style="color: var(--color-teal); font-size: 1.15rem;">MD – Radiology</h4>
+            <p class="feature-desc">Diagnostic imaging interpretation including conventional radiography, ultrasonography, computed tomography (CT), and MRI modalities.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <h4 class="feature-title" style="color: var(--color-teal); font-size: 1.15rem;">MD – Pathology</h4>
+            <p class="feature-desc">Surgical histopathology grossing, cytological examination, immunohistochemistry, and clinical laboratory quality standards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Program 3: MS Programs -->
+    <section class="section" id="ms">
+      <div class="container">
+        <div class="section-header text-left reveal-on-scroll">
+          <span class="section-badge">POSTGRADUATE SURGICAL DISCIPLINES</span>
+          <h2 class="section-title">MS Programs (Master of Surgery)</h2>
+          <p class="section-desc">Postgraduate surgical education pathways focused on surgical knowledge, clinical practice, operative skills development, and professional integrity.</p>
+        </div>
+
+        <div class="about-grid" style="margin-bottom: 3rem;">
+          <div class="about-content-column reveal-on-scroll">
+            <h3 style="margin-bottom: 1rem; color: var(--color-navy);">Operative Rigor & Surgical Simulation</h3>
+            <p style="margin-bottom: 1rem;">The Master of Surgery (MS) degree requires three years of specialized surgical apprenticeship. Surgical trainees develop technical dexterity, tissue handling techniques, and operative decision-making.</p>
+            <p style="margin-bottom: 1.5rem;">Surgical residents maintain verified operative logbooks tracking performed, assisted, and observed procedures, alongside hands-on emergency trauma management and post-operative intensive care.</p>
+
+            <div class="timeline-disclaimer-box" style="margin: 0; max-width: 100%;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <div>
+                <div class="timeline-disclaimer-title">Illustrative Surgical Specializations</div>
+                <p class="timeline-disclaimer-text">Categories include General Surgery, Orthopaedics, Ophthalmology, Obstetrics and Gynaecology, and ENT (Otorhinolaryngology).</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image-column reveal-on-scroll">
+            <div class="about-image-wrapper">
+              <img src="assets/images/anatomy-lab.webp" alt="Surgical Anatomy and Dissection Practice">
+            </div>
+          </div>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal-on-scroll">
+            <h4 class="feature-title" style="color: var(--color-blue); font-size: 1.15rem;">MS – General Surgery</h4>
+            <p class="feature-desc">Abdominal surgery, laparoscopic procedures, endocrine surgery, trauma resuscitation, and advanced wound management.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <h4 class="feature-title" style="color: var(--color-blue); font-size: 1.15rem;">MS – Orthopaedics</h4>
+            <p class="feature-desc">Trauma fracture fixation, joint arthroplasty, sports medicine injuries, pediatric orthopaedics, and musculoskeletal anatomy.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <h4 class="feature-title" style="color: var(--color-blue); font-size: 1.15rem;">MS – Ophthalmology</h4>
+            <p class="feature-desc">Microscopic cataract surgery, corneal pathology, glaucoma evaluation, retinal diagnostics, and visual field analysis.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <h4 class="feature-title" style="color: var(--color-blue); font-size: 1.15rem;">MS – Obstetrics & Gynaecology</h4>
+            <p class="feature-desc">Maternal-fetal medicine, high-risk obstetrics, normal and caesarean deliveries, and gynecological surgical interventions.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <h4 class="feature-title" style="color: var(--color-blue); font-size: 1.15rem;">MS – ENT (Otorhinolaryngology)</h4>
+            <p class="feature-desc">Ear microsurgery, endoscopic sinus procedures, head & neck oncology, and upper airway emergency management.</p>
+          </div>
+
+          <div class="feature-card reveal-on-scroll">
+            <h4 class="feature-title" style="color: var(--color-blue); font-size: 1.15rem;">Surgical Simulation & Logbooks</h4>
+            <p class="feature-desc">Dry lab suturing techniques, virtual knot-tying simulations, and systematic procedure documentation.</p>
+          </div>
+        </div>
+
+        <!-- Statutory Regulatory Notice -->
+        <div class="timeline-disclaimer-box reveal-on-scroll" style="margin-top: 3.5rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <div>
+            <div class="timeline-disclaimer-title">Important Academic Notice</div>
+            <p class="timeline-disclaimer-text">All program descriptions on this website represent general educational information. Do not imply that these programs are actually offered, approved, or accredited by a specific institution. Actual program availability, recognition, seat intake, and eligibility depend strictly on applicable regulatory approvals and institutional details.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+          <a href="admissions.html" class="btn btn-primary btn-lg">Review Admission & Eligibility Requirements</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <div class="footer-brand-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              <path d="M12 17v4M10 19h4" stroke-width="2"/>
+            </svg>
+            MEDICAL COLLEGE WEBSITE
+          </div>
+          <p class="footer-about-text">A modern, demonstration website showcasing educational structures, MBBS curriculums, medical departments, and facilities for Indian medical education institutions.</p>
+          <div class="footer-social-links">
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+            <div class="social-icon-btn" aria-label="Social Link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academic Programs</a></li>
+            <li><a href="departments.html">Departments</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Institution</h4>
+          <ul class="footer-nav-list">
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="campus-life.html">Campus Life</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <div class="footer-contact-list">
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>Phone: 0000000000</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email: demo@example.com</span>
+            </div>
+            <div class="footer-contact-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Address: Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-legal-disclaimer">
+          <strong>Disclaimer:</strong> This is a fictional educational website demonstration. All institutional details, academic programs, faculty profiles, statistics, student testimonials, medical facilities, research information, and events are illustrative and do not represent an actual medical institution.
+        </div>
+        <div class="footer-copy-row">
+          <div>&copy; 2026 Medical College Website. Demo Website – All Rights Reserved.</div>
+          <div>Compatible with Hostinger Static Website Hosting | Vanilla HTML5, CSS3 & JavaScript</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
